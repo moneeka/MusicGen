@@ -245,24 +245,29 @@ let part4 = list_to_stream [Rest(0.25); Note((G,3),0.25,60);
                             Note((B,2),0.125,60); Note((A,2),0.25,60);
                             Note((E,3),0.375,60); Note((D,3),0.125,60)];;
 
+let emotions = [|"Angry"; "angry"; "upbeat"; "Upbeat"|]
 let rec member ctr key arr = 
     if (ctr >= Array.length arr) then false
     else
     if key = arr.(ctr) then true
     else let ctr = ctr + 1 in member ctr key arr;;
- 
-let rec prompt : string =     
-     let line = print_string "Please pick an emotion: " in
-     let input = read_line line 
-     in
-     let emotions = [|"Angry";"Upbeat"|] in 
+
+
+
+let rec prompt  =    
+     let line =  print_string "Please pick an emotion: " in
+     let input  = read_line line in
+      
       if member 0 input emotions then input
       else "None"
 
-if prompt = "None" then
-() else 
- if prompt = "Angry" then output_midi "Angry.mid" 176 canon 
- else output_midi "Energetic.mid" 176 canon
+    if prompt  = "None" then
+        let () = print_string "Please try again" in 
+        let () = print_newline () in  
+        print_newline () 
+    else 
+        if prompt = "Angry" then output_midi "Angry.mid" 176 canon 
+        else output_midi "Energetic.mid" 176 canon 
 (*>* Problem 3.5 *>*)
 (* Please give us an honest estimate of how long this part took
  * you to complete.  We care about your responses and will use
