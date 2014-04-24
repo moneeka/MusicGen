@@ -7,6 +7,8 @@ module type MUS_MATRIX =
     val sum_row : float array array -> int -> float
     val get_elt : float array array -> int -> int -> float
     val change_values_based_on_divide : float array array -> int -> float -> float array 
+    val vector_change : float array array -> float array -> unit
+    val vector_mult : float array array -> float array -> float array
     end
 
 
@@ -15,7 +17,7 @@ module Mus_matrix : MUS_MATRIX =
     let music_matrix = Array.make_matrix 12 12 0.0
     
     let sum_row arr row =
-     if row < 0 || row > 12 then
+     if row < 0 || row > 11 then
         raise (Failure "row out of bounds")
      else 
         let returnrow = arr.(row) in
@@ -32,5 +34,19 @@ module Mus_matrix : MUS_MATRIX =
             let r = mat.(row) in
             Array.map (fun _ -> value /. sum) r
      
+     let vector_change mat vet =  
+        for i = 0 to 11 do
+        for j = 0 to 11 do
+       mat.(i).(j) <- mat.(i).(j) *. vet.(j)
+       done
+       done
+     
+     let vector_mult mat vet = 
+            vector_change mat vet;
+            for i = 0 to 11 do
+            vet.(i) <- sum_row mat i
+            done; vet
+       
+        
     end 
     
