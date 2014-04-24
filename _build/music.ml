@@ -272,13 +272,6 @@ let rec prompt : unit  =
             let () = print_newline () in  
             print_newline ()
 
-(*Will print out try again message or generate music *)
-(*
-    if prompt  = "None" then
-         
-    else 
-        if prompt = "Angry" then output_midi "Angry.mid" 176 canon 
-        else output_midi "Energetic.mid" 176 canon *)
         
 (*>* Problem 3.5 *>*)
 (* Please give us an honest estimate of how long this part took
