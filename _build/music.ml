@@ -271,9 +271,21 @@ let prompt : unit  =
             let () = print_newline () in  
             print_newline ()
 
-        
-(*>* Problem 3.5 *>*)
-(* Please give us an honest estimate of how long this part took
- * you to complete.  We care about your responses and will use
- * them to help guide us in creating future assignments. *)
-let minutes_spent : int = 1200
+let next_note_helper (index : int) : float array = 
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+        new_array.(index) <- 1.; new_array
+
+(*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
+let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
+  let rand = Random.int (Float.to_int sum_of_rows) in
+  let prob = (Int.to_float rand) in 
+    let ans = ref 0 in 
+    let sum = ref 0.0 in
+    let index = ref 0 in 
+        while !sum < prob do 
+        sum:= !sum +. current_prob.(!index);
+        ans:= !index;
+        index:= !index + 1
+        done ; next_note_helper !ans
+
+

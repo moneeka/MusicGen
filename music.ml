@@ -271,17 +271,21 @@ let prompt : unit  =
             let () = print_newline () in  
             print_newline ()
 
+let next_note_helper (index : int) : float array = 
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+        new_array.(index) <- 1.; new_array
+
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
 let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
   let rand = Random.int (Float.to_int sum_of_rows) in
-  if rand < current_prob.(0) then check if rand < number in first index plus number in second index else return the INDEX number of the current spot in the array we are stopped on. then initiatlize a new array where all of the elements are 0 except for at the index where we stopped in the earlier function and initialize that to 1. 
+  let prob = (Int.to_float rand) in 
+    let ans = ref 0 in 
+    let sum = ref 0.0 in
+    let index = ref 0 in 
+        while !sum < prob do 
+        sum:= !sum +. current_prob.(!index);
+        ans:= !index;
+        index:= !index + 1
+        done ; next_note_helper !ans
 
-
-
-
-  if rand >= 0 && rand < current_prob.(1)
-  then [| 3; 2; 3; 4; 1; 0; 0; 0; 0; 0; 0; 0 |]
-  else if rand >= current_prob.(1) && rand < current_prob.(2)
-  then then [| 0; 1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0 |]
-  else if  
 

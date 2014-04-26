@@ -15,7 +15,6 @@ module type MUS_MATRIX =
 module Mus_matrix : MUS_MATRIX =
    struct
     let music_matrix = Array.make_matrix 12 12 0.0
-    
     let sum_row arr row =
      if row < 0 || row > 11 then
         raise (Failure "row out of bounds")
