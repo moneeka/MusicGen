@@ -247,8 +247,7 @@ let part4 = list_to_stream [Rest(0.25); Note((G,3),0.25,60);
 
 (* emotions arrays accounting for both upper and lowercase *)
 
-let emotions = ["Angry"; "Upbeat"]
-let emotionundercase = ["angry"; "upbeat"]
+let emotions = ["angry"; "upbeat"]
 
 let rec member (key : string) (lst : string list) : bool = 
     match lst with
@@ -260,11 +259,11 @@ let rec listprint (lst: string list) : string =
     |[] -> ""
     |hd::tl -> hd ^  " " ^ (listprint tl)
 
-let rec prompt : unit  = 
+let prompt : unit  = 
      let words = "Please pick an emotion from this list" ^ " " ^ listprint emotions ^ ":" in 
      let line =  print_string words in
      let input  = read_line line in
-        if (member input emotions || member input emotionundercase) then 
+        if (member (String.lowercase input) emotions) then 
                     let filename = "gen" ^ input ^ ".mid" 
                     in output_midi filename  176 canon
         else 
