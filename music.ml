@@ -271,9 +271,17 @@ let prompt : unit  =
             let () = print_newline () in  
             print_newline ()
 
-        
-(*>* Problem 3.5 *>*)
-(* Please give us an honest estimate of how long this part took
- * you to complete.  We care about your responses and will use
- * them to help guide us in creating future assignments. *)
-let minutes_spent : int = 1200
+(*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
+let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
+  let rand = Random.int (Float.to_int sum_of_rows) in
+  if rand < current_prob.(0) then check if rand < number in first index plus number in second index else return the INDEX number of the current spot in the array we are stopped on. then initiatlize a new array where all of the elements are 0 except for at the index where we stopped in the earlier function and initialize that to 1. 
+
+
+
+
+  if rand >= 0 && rand < current_prob.(1)
+  then [| 3; 2; 3; 4; 1; 0; 0; 0; 0; 0; 0; 0 |]
+  else if rand >= current_prob.(1) && rand < current_prob.(2)
+  then then [| 0; 1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0 |]
+  else if  
+

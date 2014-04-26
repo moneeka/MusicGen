@@ -7,4 +7,6 @@
     pick the new note
     add it to the stream (side effect)
     output a vector (next note and state)
-*
+
+
+
