@@ -1,6 +1,5 @@
 open Core.Std
 
-
 module type MUS_MATRIX = 
     sig
     val music_matrix : float array array

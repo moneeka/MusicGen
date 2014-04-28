@@ -1,7 +1,7 @@
 open Core.Std
 open matrix
 
-let main_matrix = Mus_matrix.music_matrix
+let main_matrix = Matrix.music_matrix
 
 let increment_matrix_val (row:float) (col:float) : unit =
     let n = main_matrix.(row).(col) in
