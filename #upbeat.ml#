@@ -1,0 +1,8 @@
+(** UPBEAT SONGS **)
+
+(* Ode to Joy by Beethoven
+ * taken from http://www.8notes.com/school/scores/piano/beethoven_ode_to_joy.gif *)
+
+ode_to_joy = 
+
+{emotion: happy; pitches: [E; E; F; G; G; F ; E; D; C; C; D; E; E; D; D; E; E; F; G; G; F ; E; D; C; C; D; E; D; C; C; D; D; E; C; D; E; F; E; C; D; E; F; E; D; C; D; REST; E; E; F; G; G; F; E; D; C; C; D; E; D; C; C]; lengths: [.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.375;.125;.5;.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.25;.375;.125;.5;.25;.25;.25;.25;.25;.125;.125;.25;.25;.25;.125;.125;.25;25.25;25.25;.5;.25;.25;25.25;25.25;25;25;25;25;25;.375;125;.5]}:  
