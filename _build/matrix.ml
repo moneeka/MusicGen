@@ -1,10 +1,10 @@
 open Core.Std
 
-
 module type MUS_MATRIX = 
     sig
     val music_matrix : float array array
     val sum_row : float array array -> int -> float
+    val sum_vector : float array -> float
     val get_elt : float array array -> int -> int -> float
     val change_values_based_on_divide : float array array -> int -> float -> float array 
     val vector_change : float array array -> float array -> unit
@@ -24,7 +24,13 @@ module Mus_matrix : MUS_MATRIX =
          for i = 0 to Array.length returnrow - 1 do
             sum := !sum +. returnrow.(i)
         done; !sum
-        
+     
+    let sum_vector vector =
+      let sum = ref 0.0 in
+      for i = 0 to (Array.length vector) - 1 do
+	sum := !sum +. vector.(i)
+      done; !sum
+   
      let get_elt mat row col = 
         mat.(row).(col)
         
