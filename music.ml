@@ -277,11 +277,6 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
   if rand < current_prob.(0) then check if rand < number in first index plus number in second index else return the INDEX number of the current spot in the array we are stopped on. then initiatlize a new array where all of the elements are 0 except for at the index where we stopped in the earlier function and initialize that to 1. 
 
 
+																										    
 
-
-  if rand >= 0 && rand < current_prob.(1)
-  then [| 3; 2; 3; 4; 1; 0; 0; 0; 0; 0; 0; 0 |]
-  else if rand >= current_prob.(1) && rand < current_prob.(2)
-  then then [| 0; 1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0 |]
-  else if  
 
