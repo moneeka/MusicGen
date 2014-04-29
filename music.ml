@@ -1,4 +1,5 @@
 open Core.Std
+open Matrix
 
 exception InvalidHex
 exception InvalidPitch
@@ -14,6 +15,9 @@ type obj = Note of pitch * float * int | Rest of float
 let p_to_int p =
   match p with | C -> 0 | Db -> 1 | D -> 2 | Eb -> 3 | E -> 4 | F -> 5
     | Gb -> 6 | G -> 7 | Ab -> 8 | A -> 9 | Bb -> 10 | B -> 11
+
+(*let int_to_t n =
+  match t with | 0 -> |...*)
 
 let int_to_p n =
   if (n < 0) || (n > 11) then raise InvalidPitch else
@@ -271,12 +275,50 @@ let prompt : unit  =
             let () = print_newline () in  
             print_newline ()
 
+let next_note_helper (index : int) : float array = 
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+        new_array.(index) <- 1.; new_array
+
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
 let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
   let rand = Random.int (Float.to_int sum_of_rows) in
-  if rand < current_prob.(0) then check if rand < number in first index plus number in second index else return the INDEX number of the current spot in the array we are stopped on. then initiatlize a new array where all of the elements are 0 except for at the index where we stopped in the earlier function and initialize that to 1. 
+  let prob = (Int.to_float rand) in 
+    let ans = ref 0 in 
+    let sum = ref 0.0 in
+    let index = ref 0 in 
+        while !sum < prob do 
+        sum:= !sum +. current_prob.(!index);
+        ans:= !index;
+        index:= !index + 1
+        done ; next_note_helper !ans
+
+
+
+let rec build_song (note : float array) (song : float array list) : float array list =
+  let length = ref 50 in
+  while !length > 0 do
+  (* prob is a float array that contains the probabilities of the next note *)
+  let prob = Mus_matrix.vector_mult (*probability matrix*) note in
+  let new_note = next_note prob (sum_vector prob) in
+  length := !length - 1; song @ new_note
+  done 
+ 
+
+
+
 
 
 																										    
 
 
+<<<<<<< HEAD
+=======
+(* take in current note (a float array)
+generate next note (multiply note by matrix to generate probabilities, then use next_note)
+add current note to list
+substract length of note from thirty
+then run the function on the next note
+returns the list
+prompts for user input *)
+
+>>>>>>> 954355b64ba99639ca75cce999178cac9aa5a51e

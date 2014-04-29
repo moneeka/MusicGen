@@ -1,153 +1,153 @@
-"matrix.ml" 17 480 488 "matrix.ml" 17 480 500
+"matrix.ml" 17 521 529 "matrix.ml" 17 521 541
 type(
   float array array
 )
 ident(
-  def music_matrix "matrix.ml" 19 536 540 "matrix.ml" 51 1421 1428
+  def music_matrix "matrix.ml" 18 572 576 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 17 480 503 "matrix.ml" 17 480 520
+"matrix.ml" 17 521 544 "matrix.ml" 17 521 561
 type(
   dimx:int -> dimy:int -> float -> float array array
 )
 ident(
   ext_ref Core.Std.Array.make_matrix
 )
-"matrix.ml" 17 480 521 "matrix.ml" 17 480 523
+"matrix.ml" 17 521 562 "matrix.ml" 17 521 564
 type(
   int
 )
-"matrix.ml" 17 480 524 "matrix.ml" 17 480 526
+"matrix.ml" 17 521 565 "matrix.ml" 17 521 567
 type(
   int
 )
-"matrix.ml" 17 480 527 "matrix.ml" 17 480 530
+"matrix.ml" 17 521 568 "matrix.ml" 17 521 571
 type(
   float
 )
-"matrix.ml" 17 480 503 "matrix.ml" 17 480 530
+"matrix.ml" 17 521 544 "matrix.ml" 17 521 571
 call(
   stack
 )
 type(
   float array array
 )
-"matrix.ml" 19 536 544 "matrix.ml" 19 536 551
+"matrix.ml" 18 572 580 "matrix.ml" 18 572 587
 type(
   float array array -> int -> float
 )
 ident(
-  def sum_row "matrix.ml" 29 838 843 "matrix.ml" 51 1421 1428
+  def sum_row "matrix.ml" 28 871 875 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 19 536 552 "matrix.ml" 19 536 555
+"matrix.ml" 18 572 588 "matrix.ml" 18 572 591
 type(
   float array array
 )
 ident(
-  def arr "matrix.ml" 19 536 556 "matrix.ml" 27 810 828
+  def arr "matrix.ml" 18 572 592 "matrix.ml" 26 846 864
 )
-"matrix.ml" 19 536 556 "matrix.ml" 19 536 559
+"matrix.ml" 18 572 592 "matrix.ml" 18 572 595
 type(
   int
 )
 ident(
-  def row "matrix.ml" 20 562 567 "matrix.ml" 27 810 828
+  def row "matrix.ml" 19 598 603 "matrix.ml" 26 846 864
 )
-"matrix.ml" 20 562 570 "matrix.ml" 20 562 573
+"matrix.ml" 19 598 606 "matrix.ml" 19 598 609
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 19 536 556 "matrix.ml" 19 536 559
+  int_ref row "matrix.ml" 18 572 592 "matrix.ml" 18 572 595
 )
-"matrix.ml" 20 562 574 "matrix.ml" 20 562 575
+"matrix.ml" 19 598 610 "matrix.ml" 19 598 611
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"matrix.ml" 20 562 576 "matrix.ml" 20 562 577
+"matrix.ml" 19 598 612 "matrix.ml" 19 598 613
 type(
   int
 )
-"matrix.ml" 20 562 570 "matrix.ml" 20 562 577
+"matrix.ml" 19 598 606 "matrix.ml" 19 598 613
 type(
   bool
 )
-"matrix.ml" 20 562 578 "matrix.ml" 20 562 580
+"matrix.ml" 19 598 614 "matrix.ml" 19 598 616
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"matrix.ml" 20 562 581 "matrix.ml" 20 562 584
+"matrix.ml" 19 598 617 "matrix.ml" 19 598 620
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 19 536 556 "matrix.ml" 19 536 559
+  int_ref row "matrix.ml" 18 572 592 "matrix.ml" 18 572 595
 )
-"matrix.ml" 20 562 585 "matrix.ml" 20 562 586
+"matrix.ml" 19 598 621 "matrix.ml" 19 598 622
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"matrix.ml" 20 562 587 "matrix.ml" 20 562 589
+"matrix.ml" 19 598 623 "matrix.ml" 19 598 625
 type(
   int
 )
-"matrix.ml" 20 562 581 "matrix.ml" 20 562 589
+"matrix.ml" 19 598 617 "matrix.ml" 19 598 625
 type(
   bool
 )
-"matrix.ml" 20 562 570 "matrix.ml" 20 562 589
+"matrix.ml" 19 598 606 "matrix.ml" 19 598 625
 type(
   bool
 )
-"matrix.ml" 21 595 603 "matrix.ml" 21 595 608
+"matrix.ml" 20 631 639 "matrix.ml" 20 631 644
 type(
   exn -> float
 )
 ident(
   ext_ref Pervasives.raise
 )
-"matrix.ml" 21 595 618 "matrix.ml" 21 595 637
+"matrix.ml" 20 631 654 "matrix.ml" 20 631 673
 type(
   string
 )
-"matrix.ml" 21 595 610 "matrix.ml" 21 595 637
+"matrix.ml" 20 631 646 "matrix.ml" 20 631 673
 type(
   exn
 )
-"matrix.ml" 21 595 603 "matrix.ml" 21 595 638
+"matrix.ml" 20 631 639 "matrix.ml" 20 631 674
 type(
   float
 )
-"matrix.ml" 23 650 662 "matrix.ml" 23 650 671
+"matrix.ml" 22 686 698 "matrix.ml" 22 686 707
 type(
   float array
 )
 ident(
-  def returnrow "matrix.ml" 24 687 696 "matrix.ml" 27 810 828
+  def returnrow "matrix.ml" 23 723 732 "matrix.ml" 26 846 864
 )
-"matrix.ml" 23 650 674 "matrix.ml" 23 650 677
+"matrix.ml" 22 686 710 "matrix.ml" 22 686 713
 type(
   float array array
 )
 ident(
-  int_ref arr "matrix.ml" 19 536 552 "matrix.ml" 19 536 555
+  int_ref arr "matrix.ml" 18 572 588 "matrix.ml" 18 572 591
 )
-"matrix.ml" 23 650 679 "matrix.ml" 23 650 682
+"matrix.ml" 22 686 715 "matrix.ml" 22 686 718
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 19 536 556 "matrix.ml" 19 536 559
+  int_ref row "matrix.ml" 18 572 592 "matrix.ml" 18 572 595
 )
-"matrix.ml" 23 650 674 "matrix.ml" 23 650 683
+"matrix.ml" 22 686 710 "matrix.ml" 22 686 719
 type(
   float array
 )
@@ -157,83 +157,83 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 24 687 700 "matrix.ml" 24 687 703
+"matrix.ml" 23 723 736 "matrix.ml" 23 723 739
 type(
   float ref
 )
 ident(
-  def sum "matrix.ml" 25 717 726 "matrix.ml" 27 810 828
+  def sum "matrix.ml" 24 753 762 "matrix.ml" 26 846 864
 )
-"matrix.ml" 24 687 706 "matrix.ml" 24 687 709
+"matrix.ml" 23 723 742 "matrix.ml" 23 723 745
 type(
   float -> float ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"matrix.ml" 24 687 710 "matrix.ml" 24 687 713
+"matrix.ml" 23 723 746 "matrix.ml" 23 723 749
 type(
   float
 )
-"matrix.ml" 24 687 706 "matrix.ml" 24 687 713
+"matrix.ml" 23 723 742 "matrix.ml" 23 723 749
 type(
   float ref
 )
-"matrix.ml" 25 717 734 "matrix.ml" 25 717 735
+"matrix.ml" 24 753 770 "matrix.ml" 24 753 771
 type(
   int
 )
-"matrix.ml" 25 717 739 "matrix.ml" 25 717 751
+"matrix.ml" 24 753 775 "matrix.ml" 24 753 787
 type(
   float array -> int
 )
 ident(
   ext_ref Core.Std.Array.length
 )
-"matrix.ml" 25 717 752 "matrix.ml" 25 717 761
+"matrix.ml" 24 753 788 "matrix.ml" 24 753 797
 type(
   float array
 )
 ident(
-  int_ref returnrow "matrix.ml" 23 650 662 "matrix.ml" 23 650 671
+  int_ref returnrow "matrix.ml" 22 686 698 "matrix.ml" 22 686 707
 )
-"matrix.ml" 25 717 739 "matrix.ml" 25 717 761
+"matrix.ml" 24 753 775 "matrix.ml" 24 753 797
 call(
   stack
 )
 type(
   int
 )
-"matrix.ml" 25 717 762 "matrix.ml" 25 717 763
+"matrix.ml" 24 753 798 "matrix.ml" 24 753 799
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"matrix.ml" 25 717 764 "matrix.ml" 25 717 765
+"matrix.ml" 24 753 800 "matrix.ml" 24 753 801
 type(
   int
 )
-"matrix.ml" 25 717 739 "matrix.ml" 25 717 765
+"matrix.ml" 24 753 775 "matrix.ml" 24 753 801
 type(
   int
 )
-"matrix.ml" 26 769 781 "matrix.ml" 26 769 784
+"matrix.ml" 25 805 817 "matrix.ml" 25 805 820
 type(
   float ref
 )
 ident(
-  int_ref sum "matrix.ml" 24 687 700 "matrix.ml" 24 687 703
+  int_ref sum "matrix.ml" 23 723 736 "matrix.ml" 23 723 739
 )
-"matrix.ml" 26 769 789 "matrix.ml" 26 769 792
+"matrix.ml" 25 805 825 "matrix.ml" 25 805 828
 type(
   float ref
 )
 ident(
-  int_ref sum "matrix.ml" 24 687 700 "matrix.ml" 24 687 703
+  int_ref sum "matrix.ml" 23 723 736 "matrix.ml" 23 723 739
 )
-"matrix.ml" 26 769 788 "matrix.ml" 26 769 792
+"matrix.ml" 25 805 824 "matrix.ml" 25 805 828
 type(
   float
 )
@@ -243,28 +243,28 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"matrix.ml" 26 769 793 "matrix.ml" 26 769 795
+"matrix.ml" 25 805 829 "matrix.ml" 25 805 831
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"matrix.ml" 26 769 796 "matrix.ml" 26 769 805
+"matrix.ml" 25 805 832 "matrix.ml" 25 805 841
 type(
   float array
 )
 ident(
-  int_ref returnrow "matrix.ml" 23 650 662 "matrix.ml" 23 650 671
+  int_ref returnrow "matrix.ml" 22 686 698 "matrix.ml" 22 686 707
 )
-"matrix.ml" 26 769 807 "matrix.ml" 26 769 808
+"matrix.ml" 25 805 843 "matrix.ml" 25 805 844
 type(
   int
 )
 ident(
-  int_ref i "matrix.ml" 25 717 726 "matrix.ml" 27 810 822
+  int_ref i "matrix.ml" 24 753 762 "matrix.ml" 26 846 858
 )
-"matrix.ml" 26 769 796 "matrix.ml" 26 769 809
+"matrix.ml" 25 805 832 "matrix.ml" 25 805 845
 type(
   float
 )
@@ -274,11 +274,11 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 26 769 788 "matrix.ml" 26 769 809
+"matrix.ml" 25 805 824 "matrix.ml" 25 805 845
 type(
   float
 )
-"matrix.ml" 26 769 781 "matrix.ml" 26 769 809
+"matrix.ml" 25 805 817 "matrix.ml" 25 805 845
 type(
   unit
 )
@@ -288,18 +288,18 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"matrix.ml" 25 717 726 "matrix.ml" 27 810 822
+"matrix.ml" 24 753 762 "matrix.ml" 26 846 858
 type(
   unit
 )
-"matrix.ml" 27 810 825 "matrix.ml" 27 810 828
+"matrix.ml" 26 846 861 "matrix.ml" 26 846 864
 type(
   float ref
 )
 ident(
-  int_ref sum "matrix.ml" 24 687 700 "matrix.ml" 24 687 703
+  int_ref sum "matrix.ml" 23 723 736 "matrix.ml" 23 723 739
 )
-"matrix.ml" 27 810 824 "matrix.ml" 27 810 828
+"matrix.ml" 26 846 860 "matrix.ml" 26 846 864
 type(
   float
 )
@@ -309,73 +309,251 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"matrix.ml" 25 717 726 "matrix.ml" 27 810 828
+"matrix.ml" 24 753 762 "matrix.ml" 26 846 864
 type(
   float
 )
-"matrix.ml" 24 687 696 "matrix.ml" 27 810 828
+"matrix.ml" 23 723 732 "matrix.ml" 26 846 864
 type(
   float
 )
-"matrix.ml" 23 650 658 "matrix.ml" 27 810 828
+"matrix.ml" 22 686 694 "matrix.ml" 26 846 864
 type(
   float
 )
-"matrix.ml" 20 562 567 "matrix.ml" 27 810 828
+"matrix.ml" 19 598 603 "matrix.ml" 26 846 864
 type(
   float
 )
-"matrix.ml" 19 536 556 "matrix.ml" 27 810 828
+"matrix.ml" 18 572 592 "matrix.ml" 26 846 864
 type(
   int -> float
 )
-"matrix.ml" 19 536 552 "matrix.ml" 27 810 828
+"matrix.ml" 18 572 588 "matrix.ml" 26 846 864
 type(
   float array array -> int -> float
 )
-"matrix.ml" 29 838 847 "matrix.ml" 29 838 854
+"matrix.ml" 28 871 879 "matrix.ml" 28 871 889
+type(
+  float array -> float
+)
+ident(
+  def sum_vector "matrix.ml" 34 1022 1027 "matrix.ml" 56 1605 1612
+)
+"matrix.ml" 28 871 890 "matrix.ml" 28 871 896
+type(
+  float array
+)
+ident(
+  def vector "matrix.ml" 29 899 905 "matrix.ml" 32 1001 1017
+)
+"matrix.ml" 29 899 909 "matrix.ml" 29 899 912
+type(
+  float ref
+)
+ident(
+  def sum "matrix.ml" 30 926 932 "matrix.ml" 32 1001 1017
+)
+"matrix.ml" 29 899 915 "matrix.ml" 29 899 918
+type(
+  float -> float ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"matrix.ml" 29 899 919 "matrix.ml" 29 899 922
+type(
+  float
+)
+"matrix.ml" 29 899 915 "matrix.ml" 29 899 922
+type(
+  float ref
+)
+"matrix.ml" 30 926 940 "matrix.ml" 30 926 941
+type(
+  int
+)
+"matrix.ml" 30 926 946 "matrix.ml" 30 926 958
+type(
+  float array -> int
+)
+ident(
+  ext_ref Core.Std.Array.length
+)
+"matrix.ml" 30 926 959 "matrix.ml" 30 926 965
+type(
+  float array
+)
+ident(
+  int_ref vector "matrix.ml" 28 871 890 "matrix.ml" 28 871 896
+)
+"matrix.ml" 30 926 946 "matrix.ml" 30 926 965
+call(
+  stack
+)
+type(
+  int
+)
+"matrix.ml" 30 926 967 "matrix.ml" 30 926 968
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"matrix.ml" 30 926 969 "matrix.ml" 30 926 970
+type(
+  int
+)
+"matrix.ml" 30 926 945 "matrix.ml" 30 926 970
+type(
+  int
+)
+"matrix.ml" 31 974 975 "matrix.ml" 31 974 978
+type(
+  float ref
+)
+ident(
+  int_ref sum "matrix.ml" 29 899 909 "matrix.ml" 29 899 912
+)
+"matrix.ml" 31 974 983 "matrix.ml" 31 974 986
+type(
+  float ref
+)
+ident(
+  int_ref sum "matrix.ml" 29 899 909 "matrix.ml" 29 899 912
+)
+"matrix.ml" 31 974 982 "matrix.ml" 31 974 986
+type(
+  float
+)
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"matrix.ml" 31 974 987 "matrix.ml" 31 974 989
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"matrix.ml" 31 974 990 "matrix.ml" 31 974 996
+type(
+  float array
+)
+ident(
+  int_ref vector "matrix.ml" 28 871 890 "matrix.ml" 28 871 896
+)
+"matrix.ml" 31 974 998 "matrix.ml" 31 974 999
+type(
+  int
+)
+ident(
+  int_ref i "matrix.ml" 30 926 932 "matrix.ml" 32 1001 1011
+)
+"matrix.ml" 31 974 990 "matrix.ml" 31 974 1000
+type(
+  float
+)
+type(
+  float array -> int -> float
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"matrix.ml" 31 974 982 "matrix.ml" 31 974 1000
+type(
+  float
+)
+"matrix.ml" 31 974 975 "matrix.ml" 31 974 1000
+type(
+  unit
+)
+type(
+  float ref -> float -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"matrix.ml" 30 926 932 "matrix.ml" 32 1001 1011
+type(
+  unit
+)
+"matrix.ml" 32 1001 1014 "matrix.ml" 32 1001 1017
+type(
+  float ref
+)
+ident(
+  int_ref sum "matrix.ml" 29 899 909 "matrix.ml" 29 899 912
+)
+"matrix.ml" 32 1001 1013 "matrix.ml" 32 1001 1017
+type(
+  float
+)
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"matrix.ml" 30 926 932 "matrix.ml" 32 1001 1017
+type(
+  float
+)
+"matrix.ml" 29 899 905 "matrix.ml" 32 1001 1017
+type(
+  float
+)
+"matrix.ml" 28 871 890 "matrix.ml" 32 1001 1017
+type(
+  float array -> float
+)
+"matrix.ml" 34 1022 1031 "matrix.ml" 34 1022 1038
 type(
   'a array array -> int -> int -> 'a
 )
 ident(
-  def get_elt "matrix.ml" 32 903 908 "matrix.ml" 51 1421 1428
+  def get_elt "matrix.ml" 37 1087 1092 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 29 838 855 "matrix.ml" 29 838 858
+"matrix.ml" 34 1022 1039 "matrix.ml" 34 1022 1042
 type(
   'a array array
 )
 ident(
-  def mat "matrix.ml" 29 838 859 "matrix.ml" 30 870 893
+  def mat "matrix.ml" 34 1022 1043 "matrix.ml" 35 1054 1077
 )
-"matrix.ml" 29 838 859 "matrix.ml" 29 838 862
+"matrix.ml" 34 1022 1043 "matrix.ml" 34 1022 1046
 type(
   int
 )
 ident(
-  def row "matrix.ml" 29 838 863 "matrix.ml" 30 870 893
+  def row "matrix.ml" 34 1022 1047 "matrix.ml" 35 1054 1077
 )
-"matrix.ml" 29 838 863 "matrix.ml" 29 838 866
+"matrix.ml" 34 1022 1047 "matrix.ml" 34 1022 1050
 type(
   int
 )
 ident(
-  def col "matrix.ml" 30 870 878 "matrix.ml" 30 870 893
+  def col "matrix.ml" 35 1054 1062 "matrix.ml" 35 1054 1077
 )
-"matrix.ml" 30 870 878 "matrix.ml" 30 870 881
+"matrix.ml" 35 1054 1062 "matrix.ml" 35 1054 1065
 type(
   'a array array
 )
 ident(
-  int_ref mat "matrix.ml" 29 838 855 "matrix.ml" 29 838 858
+  int_ref mat "matrix.ml" 34 1022 1039 "matrix.ml" 34 1022 1042
 )
-"matrix.ml" 30 870 883 "matrix.ml" 30 870 886
+"matrix.ml" 35 1054 1067 "matrix.ml" 35 1054 1070
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 29 838 859 "matrix.ml" 29 838 862
+  int_ref row "matrix.ml" 34 1022 1043 "matrix.ml" 34 1022 1046
 )
-"matrix.ml" 30 870 878 "matrix.ml" 30 870 887
+"matrix.ml" 35 1054 1062 "matrix.ml" 35 1054 1071
 type(
   'a array
 )
@@ -385,14 +563,14 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 30 870 889 "matrix.ml" 30 870 892
+"matrix.ml" 35 1054 1073 "matrix.ml" 35 1054 1076
 type(
   int
 )
 ident(
-  int_ref col "matrix.ml" 29 838 863 "matrix.ml" 29 838 866
+  int_ref col "matrix.ml" 34 1022 1047 "matrix.ml" 34 1022 1050
 )
-"matrix.ml" 30 870 878 "matrix.ml" 30 870 893
+"matrix.ml" 35 1054 1062 "matrix.ml" 35 1054 1077
 type(
   'a
 )
@@ -402,103 +580,103 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 29 838 863 "matrix.ml" 30 870 893
+"matrix.ml" 34 1022 1047 "matrix.ml" 35 1054 1077
 type(
   int -> 'a
 )
-"matrix.ml" 29 838 859 "matrix.ml" 30 870 893
+"matrix.ml" 34 1022 1043 "matrix.ml" 35 1054 1077
 type(
   int -> int -> 'a
 )
-"matrix.ml" 29 838 855 "matrix.ml" 30 870 893
+"matrix.ml" 34 1022 1039 "matrix.ml" 35 1054 1077
 type(
   'a array array -> int -> int -> 'a
 )
-"matrix.ml" 32 903 912 "matrix.ml" 32 903 941
+"matrix.ml" 37 1087 1096 "matrix.ml" 37 1087 1125
 type(
   float array array -> int -> float -> float array
 )
 ident(
-  def change_values_based_on_divide "matrix.ml" 37 1083 1088 "matrix.ml" 51 1421 1428
+  def change_values_based_on_divide "matrix.ml" 42 1267 1272 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 32 903 942 "matrix.ml" 32 903 945
+"matrix.ml" 37 1087 1126 "matrix.ml" 37 1087 1129
 type(
   float array array
 )
 ident(
-  def mat "matrix.ml" 32 903 946 "matrix.ml" 35 1029 1076
+  def mat "matrix.ml" 37 1087 1130 "matrix.ml" 40 1213 1260
 )
-"matrix.ml" 32 903 946 "matrix.ml" 32 903 949
+"matrix.ml" 37 1087 1130 "matrix.ml" 37 1087 1133
 type(
   int
 )
 ident(
-  def row "matrix.ml" 32 903 950 "matrix.ml" 35 1029 1076
+  def row "matrix.ml" 37 1087 1134 "matrix.ml" 40 1213 1260
 )
-"matrix.ml" 32 903 950 "matrix.ml" 32 903 955
+"matrix.ml" 37 1087 1134 "matrix.ml" 37 1087 1139
 type(
   float
 )
 ident(
-  def value "matrix.ml" 33 959 967 "matrix.ml" 35 1029 1076
+  def value "matrix.ml" 38 1143 1151 "matrix.ml" 40 1213 1260
 )
-"matrix.ml" 33 959 971 "matrix.ml" 33 959 974
+"matrix.ml" 38 1143 1155 "matrix.ml" 38 1143 1158
 type(
   float
 )
 ident(
-  def sum "matrix.ml" 34 996 1008 "matrix.ml" 35 1029 1076
+  def sum "matrix.ml" 39 1180 1192 "matrix.ml" 40 1213 1260
 )
-"matrix.ml" 33 959 977 "matrix.ml" 33 959 984
+"matrix.ml" 38 1143 1161 "matrix.ml" 38 1143 1168
 type(
   float array array -> int -> float
 )
 ident(
-  int_ref sum_row "matrix.ml" 19 536 544 "matrix.ml" 19 536 551
+  int_ref sum_row "matrix.ml" 18 572 580 "matrix.ml" 18 572 587
 )
-"matrix.ml" 33 959 985 "matrix.ml" 33 959 988
+"matrix.ml" 38 1143 1169 "matrix.ml" 38 1143 1172
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 32 903 942 "matrix.ml" 32 903 945
+  int_ref mat "matrix.ml" 37 1087 1126 "matrix.ml" 37 1087 1129
 )
-"matrix.ml" 33 959 989 "matrix.ml" 33 959 992
+"matrix.ml" 38 1143 1173 "matrix.ml" 38 1143 1176
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 32 903 946 "matrix.ml" 32 903 949
+  int_ref row "matrix.ml" 37 1087 1130 "matrix.ml" 37 1087 1133
 )
-"matrix.ml" 33 959 977 "matrix.ml" 33 959 992
+"matrix.ml" 38 1143 1161 "matrix.ml" 38 1143 1176
 call(
   stack
 )
 type(
   float
 )
-"matrix.ml" 34 996 1012 "matrix.ml" 34 996 1013
+"matrix.ml" 39 1180 1196 "matrix.ml" 39 1180 1197
 type(
   float array
 )
 ident(
-  def r "matrix.ml" 35 1029 1041 "matrix.ml" 35 1029 1076
+  def r "matrix.ml" 40 1213 1225 "matrix.ml" 40 1213 1260
 )
-"matrix.ml" 34 996 1016 "matrix.ml" 34 996 1019
+"matrix.ml" 39 1180 1200 "matrix.ml" 39 1180 1203
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 32 903 942 "matrix.ml" 32 903 945
+  int_ref mat "matrix.ml" 37 1087 1126 "matrix.ml" 37 1087 1129
 )
-"matrix.ml" 34 996 1021 "matrix.ml" 34 996 1024
+"matrix.ml" 39 1180 1205 "matrix.ml" 39 1180 1208
 type(
   int
 )
 ident(
-  int_ref row "matrix.ml" 32 903 946 "matrix.ml" 32 903 949
+  int_ref row "matrix.ml" 37 1087 1130 "matrix.ml" 37 1087 1133
 )
-"matrix.ml" 34 996 1016 "matrix.ml" 34 996 1025
+"matrix.ml" 39 1180 1200 "matrix.ml" 39 1180 1209
 type(
   float array
 )
@@ -508,132 +686,132 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 35 1029 1041 "matrix.ml" 35 1029 1050
+"matrix.ml" 40 1213 1225 "matrix.ml" 40 1213 1234
 type(
   f:(float -> float) -> float array -> float array
 )
 ident(
   ext_ref Core.Std.Array.map
 )
-"matrix.ml" 35 1029 1056 "matrix.ml" 35 1029 1057
+"matrix.ml" 40 1213 1240 "matrix.ml" 40 1213 1241
 type(
   float
 )
-"matrix.ml" 35 1029 1061 "matrix.ml" 35 1029 1066
+"matrix.ml" 40 1213 1245 "matrix.ml" 40 1213 1250
 type(
   float
 )
 ident(
-  int_ref value "matrix.ml" 32 903 950 "matrix.ml" 32 903 955
+  int_ref value "matrix.ml" 37 1087 1134 "matrix.ml" 37 1087 1139
 )
-"matrix.ml" 35 1029 1067 "matrix.ml" 35 1029 1069
+"matrix.ml" 40 1213 1251 "matrix.ml" 40 1213 1253
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"matrix.ml" 35 1029 1070 "matrix.ml" 35 1029 1073
+"matrix.ml" 40 1213 1254 "matrix.ml" 40 1213 1257
 type(
   float
 )
 ident(
-  int_ref sum "matrix.ml" 33 959 971 "matrix.ml" 33 959 974
+  int_ref sum "matrix.ml" 38 1143 1155 "matrix.ml" 38 1143 1158
 )
-"matrix.ml" 35 1029 1061 "matrix.ml" 35 1029 1073
+"matrix.ml" 40 1213 1245 "matrix.ml" 40 1213 1257
 type(
   float
 )
-"matrix.ml" 35 1029 1056 "matrix.ml" 35 1029 1073
+"matrix.ml" 40 1213 1240 "matrix.ml" 40 1213 1257
 type(
   float -> float
 )
-"matrix.ml" 35 1029 1075 "matrix.ml" 35 1029 1076
+"matrix.ml" 40 1213 1259 "matrix.ml" 40 1213 1260
 type(
   float array
 )
 ident(
-  int_ref r "matrix.ml" 34 996 1012 "matrix.ml" 34 996 1013
+  int_ref r "matrix.ml" 39 1180 1196 "matrix.ml" 39 1180 1197
 )
-"matrix.ml" 35 1029 1041 "matrix.ml" 35 1029 1076
+"matrix.ml" 40 1213 1225 "matrix.ml" 40 1213 1260
 call(
   tail
 )
 type(
   float array
 )
-"matrix.ml" 34 996 1008 "matrix.ml" 35 1029 1076
+"matrix.ml" 39 1180 1192 "matrix.ml" 40 1213 1260
 type(
   float array
 )
-"matrix.ml" 33 959 967 "matrix.ml" 35 1029 1076
+"matrix.ml" 38 1143 1151 "matrix.ml" 40 1213 1260
 type(
   float array
 )
-"matrix.ml" 32 903 950 "matrix.ml" 35 1029 1076
+"matrix.ml" 37 1087 1134 "matrix.ml" 40 1213 1260
 type(
   float -> float array
 )
-"matrix.ml" 32 903 946 "matrix.ml" 35 1029 1076
+"matrix.ml" 37 1087 1130 "matrix.ml" 40 1213 1260
 type(
   int -> float -> float array
 )
-"matrix.ml" 32 903 942 "matrix.ml" 35 1029 1076
+"matrix.ml" 37 1087 1126 "matrix.ml" 40 1213 1260
 type(
   float array array -> int -> float -> float array
 )
-"matrix.ml" 37 1083 1092 "matrix.ml" 37 1083 1105
+"matrix.ml" 42 1267 1276 "matrix.ml" 42 1267 1289
 type(
   float array array -> float array -> unit
 )
 ident(
-  def vector_change "matrix.ml" 44 1247 1252 "matrix.ml" 51 1421 1428
+  def vector_change "matrix.ml" 49 1431 1436 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 37 1083 1106 "matrix.ml" 37 1083 1109
+"matrix.ml" 42 1267 1290 "matrix.ml" 42 1267 1293
 type(
   float array array
 )
 ident(
-  def mat "matrix.ml" 37 1083 1110 "matrix.ml" 42 1229 1240
+  def mat "matrix.ml" 42 1267 1294 "matrix.ml" 47 1413 1424
 )
-"matrix.ml" 37 1083 1110 "matrix.ml" 37 1083 1113
+"matrix.ml" 42 1267 1294 "matrix.ml" 42 1267 1297
 type(
   float array
 )
 ident(
-  def vet "matrix.ml" 38 1118 1126 "matrix.ml" 42 1229 1240
+  def vet "matrix.ml" 43 1302 1310 "matrix.ml" 47 1413 1424
 )
-"matrix.ml" 38 1118 1134 "matrix.ml" 38 1118 1135
+"matrix.ml" 43 1302 1318 "matrix.ml" 43 1302 1319
 type(
   int
 )
-"matrix.ml" 38 1118 1139 "matrix.ml" 38 1118 1141
+"matrix.ml" 43 1302 1323 "matrix.ml" 43 1302 1325
 type(
   int
 )
-"matrix.ml" 39 1145 1161 "matrix.ml" 39 1145 1162
+"matrix.ml" 44 1329 1345 "matrix.ml" 44 1329 1346
 type(
   int
 )
-"matrix.ml" 39 1145 1166 "matrix.ml" 39 1145 1168
+"matrix.ml" 44 1329 1350 "matrix.ml" 44 1329 1352
 type(
   int
 )
-"matrix.ml" 40 1172 1179 "matrix.ml" 40 1172 1182
+"matrix.ml" 45 1356 1363 "matrix.ml" 45 1356 1366
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 37 1083 1106 "matrix.ml" 37 1083 1109
+  int_ref mat "matrix.ml" 42 1267 1290 "matrix.ml" 42 1267 1293
 )
-"matrix.ml" 40 1172 1184 "matrix.ml" 40 1172 1185
+"matrix.ml" 45 1356 1368 "matrix.ml" 45 1356 1369
 type(
   int
 )
 ident(
-  int_ref i "matrix.ml" 38 1118 1126 "matrix.ml" 42 1229 1240
+  int_ref i "matrix.ml" 43 1302 1310 "matrix.ml" 47 1413 1424
 )
-"matrix.ml" 40 1172 1179 "matrix.ml" 40 1172 1186
+"matrix.ml" 45 1356 1363 "matrix.ml" 45 1356 1370
 type(
   float array
 )
@@ -643,35 +821,35 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 40 1172 1188 "matrix.ml" 40 1172 1189
+"matrix.ml" 45 1356 1372 "matrix.ml" 45 1356 1373
 type(
   int
 )
 ident(
-  int_ref j "matrix.ml" 39 1145 1153 "matrix.ml" 41 1217 1228
+  int_ref j "matrix.ml" 44 1329 1337 "matrix.ml" 46 1401 1412
 )
-"matrix.ml" 40 1172 1179 "matrix.ml" 40 1172 1190
+"matrix.ml" 45 1356 1363 "matrix.ml" 45 1356 1374
 type(
   float array -> int -> float -> unit
 )
 ident(
   ext_ref Core.Std.Array.set
 )
-"matrix.ml" 40 1172 1194 "matrix.ml" 40 1172 1197
+"matrix.ml" 45 1356 1378 "matrix.ml" 45 1356 1381
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 37 1083 1106 "matrix.ml" 37 1083 1109
+  int_ref mat "matrix.ml" 42 1267 1290 "matrix.ml" 42 1267 1293
 )
-"matrix.ml" 40 1172 1199 "matrix.ml" 40 1172 1200
+"matrix.ml" 45 1356 1383 "matrix.ml" 45 1356 1384
 type(
   int
 )
 ident(
-  int_ref i "matrix.ml" 38 1118 1126 "matrix.ml" 42 1229 1240
+  int_ref i "matrix.ml" 43 1302 1310 "matrix.ml" 47 1413 1424
 )
-"matrix.ml" 40 1172 1194 "matrix.ml" 40 1172 1201
+"matrix.ml" 45 1356 1378 "matrix.ml" 45 1356 1385
 type(
   float array
 )
@@ -681,14 +859,14 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 40 1172 1203 "matrix.ml" 40 1172 1204
+"matrix.ml" 45 1356 1387 "matrix.ml" 45 1356 1388
 type(
   int
 )
 ident(
-  int_ref j "matrix.ml" 39 1145 1153 "matrix.ml" 41 1217 1228
+  int_ref j "matrix.ml" 44 1329 1337 "matrix.ml" 46 1401 1412
 )
-"matrix.ml" 40 1172 1194 "matrix.ml" 40 1172 1205
+"matrix.ml" 45 1356 1378 "matrix.ml" 45 1356 1389
 type(
   float
 )
@@ -698,28 +876,28 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 40 1172 1206 "matrix.ml" 40 1172 1208
+"matrix.ml" 45 1356 1390 "matrix.ml" 45 1356 1392
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"matrix.ml" 40 1172 1209 "matrix.ml" 40 1172 1212
+"matrix.ml" 45 1356 1393 "matrix.ml" 45 1356 1396
 type(
   float array
 )
 ident(
-  int_ref vet "matrix.ml" 37 1083 1110 "matrix.ml" 37 1083 1113
+  int_ref vet "matrix.ml" 42 1267 1294 "matrix.ml" 42 1267 1297
 )
-"matrix.ml" 40 1172 1214 "matrix.ml" 40 1172 1215
+"matrix.ml" 45 1356 1398 "matrix.ml" 45 1356 1399
 type(
   int
 )
 ident(
-  int_ref j "matrix.ml" 39 1145 1153 "matrix.ml" 41 1217 1228
+  int_ref j "matrix.ml" 44 1329 1337 "matrix.ml" 46 1401 1412
 )
-"matrix.ml" 40 1172 1209 "matrix.ml" 40 1172 1216
+"matrix.ml" 45 1356 1393 "matrix.ml" 45 1356 1400
 type(
   float
 )
@@ -729,164 +907,164 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"matrix.ml" 40 1172 1194 "matrix.ml" 40 1172 1216
+"matrix.ml" 45 1356 1378 "matrix.ml" 45 1356 1400
 type(
   float
 )
-"matrix.ml" 40 1172 1179 "matrix.ml" 40 1172 1216
+"matrix.ml" 45 1356 1363 "matrix.ml" 45 1356 1400
 type(
   unit
 )
-"matrix.ml" 39 1145 1153 "matrix.ml" 41 1217 1228
+"matrix.ml" 44 1329 1337 "matrix.ml" 46 1401 1412
 type(
   unit
 )
-"matrix.ml" 38 1118 1126 "matrix.ml" 42 1229 1240
+"matrix.ml" 43 1302 1310 "matrix.ml" 47 1413 1424
 type(
   unit
 )
-"matrix.ml" 37 1083 1110 "matrix.ml" 42 1229 1240
+"matrix.ml" 42 1267 1294 "matrix.ml" 47 1413 1424
 type(
   float array -> unit
 )
-"matrix.ml" 37 1083 1106 "matrix.ml" 42 1229 1240
+"matrix.ml" 42 1267 1290 "matrix.ml" 47 1413 1424
 type(
   float array array -> float array -> unit
 )
-"matrix.ml" 44 1247 1256 "matrix.ml" 44 1247 1267
+"matrix.ml" 49 1431 1440 "matrix.ml" 49 1431 1451
 type(
   float array array -> float array -> float array
 )
 ident(
-  def vector_mult "matrix.ml" 48 1382 1403 "matrix.ml" 51 1421 1428
+  def vector_mult "matrix.ml" 53 1566 1587 "matrix.ml" 56 1605 1612
 )
-"matrix.ml" 44 1247 1268 "matrix.ml" 44 1247 1271
+"matrix.ml" 49 1431 1452 "matrix.ml" 49 1431 1455
 type(
   float array array
 )
 ident(
-  def mat "matrix.ml" 44 1247 1272 "matrix.ml" 48 1382 1403
+  def mat "matrix.ml" 49 1431 1456 "matrix.ml" 53 1566 1587
 )
-"matrix.ml" 44 1247 1272 "matrix.ml" 44 1247 1275
+"matrix.ml" 49 1431 1456 "matrix.ml" 49 1431 1459
 type(
   float array
 )
 ident(
-  def vet "matrix.ml" 45 1279 1291 "matrix.ml" 48 1382 1403
+  def vet "matrix.ml" 50 1463 1475 "matrix.ml" 53 1566 1587
 )
-"matrix.ml" 45 1279 1291 "matrix.ml" 45 1279 1304
+"matrix.ml" 50 1463 1475 "matrix.ml" 50 1463 1488
 type(
   float array array -> float array -> unit
 )
 ident(
-  int_ref vector_change "matrix.ml" 37 1083 1092 "matrix.ml" 37 1083 1105
+  int_ref vector_change "matrix.ml" 42 1267 1276 "matrix.ml" 42 1267 1289
 )
-"matrix.ml" 45 1279 1305 "matrix.ml" 45 1279 1308
+"matrix.ml" 50 1463 1489 "matrix.ml" 50 1463 1492
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 44 1247 1268 "matrix.ml" 44 1247 1271
+  int_ref mat "matrix.ml" 49 1431 1452 "matrix.ml" 49 1431 1455
 )
-"matrix.ml" 45 1279 1309 "matrix.ml" 45 1279 1312
+"matrix.ml" 50 1463 1493 "matrix.ml" 50 1463 1496
 type(
   float array
 )
 ident(
-  int_ref vet "matrix.ml" 44 1247 1272 "matrix.ml" 44 1247 1275
+  int_ref vet "matrix.ml" 49 1431 1456 "matrix.ml" 49 1431 1459
 )
-"matrix.ml" 45 1279 1291 "matrix.ml" 45 1279 1312
+"matrix.ml" 50 1463 1475 "matrix.ml" 50 1463 1496
 call(
   stack
 )
 type(
   unit
 )
-"matrix.ml" 46 1314 1334 "matrix.ml" 46 1314 1335
+"matrix.ml" 51 1498 1518 "matrix.ml" 51 1498 1519
 type(
   int
 )
-"matrix.ml" 46 1314 1339 "matrix.ml" 46 1314 1341
+"matrix.ml" 51 1498 1523 "matrix.ml" 51 1498 1525
 type(
   int
 )
-"matrix.ml" 47 1345 1357 "matrix.ml" 47 1345 1360
+"matrix.ml" 52 1529 1541 "matrix.ml" 52 1529 1544
 type(
   float array
 )
 ident(
-  int_ref vet "matrix.ml" 44 1247 1272 "matrix.ml" 44 1247 1275
+  int_ref vet "matrix.ml" 49 1431 1456 "matrix.ml" 49 1431 1459
 )
-"matrix.ml" 47 1345 1362 "matrix.ml" 47 1345 1363
+"matrix.ml" 52 1529 1546 "matrix.ml" 52 1529 1547
 type(
   int
 )
 ident(
-  int_ref i "matrix.ml" 46 1314 1326 "matrix.ml" 48 1382 1398
+  int_ref i "matrix.ml" 51 1498 1510 "matrix.ml" 53 1566 1582
 )
-"matrix.ml" 47 1345 1357 "matrix.ml" 47 1345 1364
+"matrix.ml" 52 1529 1541 "matrix.ml" 52 1529 1548
 type(
   float array -> int -> float -> unit
 )
 ident(
   ext_ref Core.Std.Array.set
 )
-"matrix.ml" 47 1345 1368 "matrix.ml" 47 1345 1375
+"matrix.ml" 52 1529 1552 "matrix.ml" 52 1529 1559
 type(
   float array array -> int -> float
 )
 ident(
-  int_ref sum_row "matrix.ml" 19 536 544 "matrix.ml" 19 536 551
+  int_ref sum_row "matrix.ml" 18 572 580 "matrix.ml" 18 572 587
 )
-"matrix.ml" 47 1345 1376 "matrix.ml" 47 1345 1379
+"matrix.ml" 52 1529 1560 "matrix.ml" 52 1529 1563
 type(
   float array array
 )
 ident(
-  int_ref mat "matrix.ml" 44 1247 1268 "matrix.ml" 44 1247 1271
+  int_ref mat "matrix.ml" 49 1431 1452 "matrix.ml" 49 1431 1455
 )
-"matrix.ml" 47 1345 1380 "matrix.ml" 47 1345 1381
+"matrix.ml" 52 1529 1564 "matrix.ml" 52 1529 1565
 type(
   int
 )
 ident(
-  int_ref i "matrix.ml" 46 1314 1326 "matrix.ml" 48 1382 1398
+  int_ref i "matrix.ml" 51 1498 1510 "matrix.ml" 53 1566 1582
 )
-"matrix.ml" 47 1345 1368 "matrix.ml" 47 1345 1381
+"matrix.ml" 52 1529 1552 "matrix.ml" 52 1529 1565
 call(
   stack
 )
 type(
   float
 )
-"matrix.ml" 47 1345 1357 "matrix.ml" 47 1345 1381
+"matrix.ml" 52 1529 1541 "matrix.ml" 52 1529 1565
 type(
   unit
 )
-"matrix.ml" 46 1314 1326 "matrix.ml" 48 1382 1398
+"matrix.ml" 51 1498 1510 "matrix.ml" 53 1566 1582
 type(
   unit
 )
-"matrix.ml" 48 1382 1400 "matrix.ml" 48 1382 1403
+"matrix.ml" 53 1566 1584 "matrix.ml" 53 1566 1587
 type(
   float array
 )
 ident(
-  int_ref vet "matrix.ml" 44 1247 1272 "matrix.ml" 44 1247 1275
+  int_ref vet "matrix.ml" 49 1431 1456 "matrix.ml" 49 1431 1459
 )
-"matrix.ml" 46 1314 1326 "matrix.ml" 48 1382 1403
+"matrix.ml" 51 1498 1510 "matrix.ml" 53 1566 1587
 type(
   float array
 )
-"matrix.ml" 45 1279 1291 "matrix.ml" 48 1382 1403
+"matrix.ml" 50 1463 1475 "matrix.ml" 53 1566 1587
 type(
   float array
 )
-"matrix.ml" 44 1247 1272 "matrix.ml" 48 1382 1403
+"matrix.ml" 49 1431 1456 "matrix.ml" 53 1566 1587
 type(
   float array -> float array
 )
-"matrix.ml" 44 1247 1268 "matrix.ml" 48 1382 1403
+"matrix.ml" 49 1431 1452 "matrix.ml" 53 1566 1587
 type(
   float array array -> float array -> float array
 )
