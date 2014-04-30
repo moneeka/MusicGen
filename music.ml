@@ -274,6 +274,23 @@ let prompt : unit  =
             let () = print_string "Please try again : Not a valid emotion" in 
             let () = print_newline () in  
             print_newline ()
+            
+let rec convert_plist_to_intlist (notes : 'a list) (intlist : int list) : int list=
+     match notes with
+     |[] -> List.rev intlist
+     |hd::tl-> convert_plist_to_intlist tl ((p_to_int hd)::intlist)          
+            
+let main_matrix = Mus_matrix.music_matrix
+
+let increment_matrix_val (row:int) (col:int) : unit =
+    let n = main_matrix.(row).(col) in
+    main_matrix.(row).(col) <- n +. 1.
+
+let rec note_counter (notes_list : int list) : float array array =
+    match notes_list with
+    | [] -> raise (Failure "No notes recieved.")
+    | [hd] -> main_matrix
+    | hd1::hd2::tl -> increment_matrix_val hd1 hd2; note_counter (hd2::tl)             
 
 let next_note_helper (index : int) : float array = 
     let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
@@ -310,9 +327,6 @@ let rec build_song (note : float array) (song : float array list) : float array 
 
 																										    
 
-
-<<<<<<< HEAD
-=======
 (* take in current note (a float array)
 generate next note (multiply note by matrix to generate probabilities, then use next_note)
 add current note to list
@@ -321,4 +335,4 @@ then run the function on the next note
 returns the list
 prompts for user input *)
 
->>>>>>> 954355b64ba99639ca75cce999178cac9aa5a51e
+
