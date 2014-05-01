@@ -316,7 +316,7 @@ let rec build_song (note : float array) (song : float array list) : float array 
   while !length > 0 do
   (* prob is a float array that contains the probabilities of the next note *)
   let prob = Mus_matrix.vector_mult (*probability matrix*) note in
-  let new_note = next_note prob (sum_vector prob) in
+  let new_note = next_note prob (Mus_matrix.sum_vector prob) in
   length := !length - 1; song @ new_note
   done 
  
