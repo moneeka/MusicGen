@@ -14,9 +14,9 @@ module type MUS_MATRIX =
 
 module Mus_matrix : MUS_MATRIX =
    struct
-    let music_matrix = Array.make_matrix 12 12 0.0
+    let music_matrix = Array.make_matrix 13 13 0.0
     let sum_row arr row =
-     if row < 0 || row > 11 then
+     if row < 0 || row > 12 then
         raise (Failure "row out of bounds")
      else 
         let returnrow = arr.(row) in
@@ -40,15 +40,15 @@ module Mus_matrix : MUS_MATRIX =
             Array.map (fun _ -> value /. sum) r
      
      let vector_change mat vet =  
-        for i = 0 to 11 do
-        for j = 0 to 11 do
+        for i = 0 to 12 do
+        for j = 0 to 12 do
        mat.(i).(j) <- mat.(i).(j) *. vet.(j)
        done
        done
      
      let vector_mult mat vet = 
             vector_change mat vet;
-            for i = 0 to 11 do
+            for i = 0 to 12 do
             vet.(i) <- sum_row mat i
             done; vet
        

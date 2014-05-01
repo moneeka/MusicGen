@@ -335,9 +335,6 @@ ident(
   int_ref n "music.ml" 22 508 521 "music.ml" 22 508 522
 )
 "music.ml" 25 631 633 "music.ml" 25 631 655
-call(
-  tail
-)
 type(
   p
 )
@@ -394,9 +391,6 @@ type(
   unit
 )
 "music.ml" 32 787 806 "music.ml" 32 787 810
-call(
-  stack
-)
 type(
   'a str
 )
@@ -459,9 +453,6 @@ type(
   unit
 )
 "music.ml" 36 858 878 "music.ml" 36 858 882
-call(
-  stack
-)
 type(
   'a str
 )
@@ -530,16 +521,10 @@ ident(
   int_ref s "music.ml" 39 893 920 "music.ml" 39 893 921
 )
 "music.ml" 40 948 968 "music.ml" 40 948 974
-call(
-  stack
-)
 type(
   'a
 )
 "music.ml" 40 948 965 "music.ml" 40 948 975
-call(
-  stack
-)
 type(
   'b
 )
@@ -572,16 +557,10 @@ ident(
   int_ref s "music.ml" 39 893 920 "music.ml" 39 893 921
 )
 "music.ml" 40 948 984 "music.ml" 40 948 990
-call(
-  stack
-)
 type(
   'a stream
 )
 "music.ml" 40 948 977 "music.ml" 40 948 991
-call(
-  stack
-)
 type(
   'b stream
 )
@@ -644,9 +623,6 @@ ident(
   int_ref hex "music.ml" 45 1029 1044 "music.ml" 45 1029 1047
 )
 "music.ml" 45 1029 1065 "music.ml" 45 1029 1073
-call(
-  stack
-)
 type(
   string
 )
@@ -691,9 +667,6 @@ ident(
   int_ref n "music.ml" 47 1076 1091 "music.ml" 47 1076 1092
 )
 "music.ml" 47 1076 1095 "music.ml" 47 1076 1118
-call(
-  tail
-)
 type(
   string
 )
@@ -854,23 +827,14 @@ type(
   int
 )
 "music.ml" 54 1280 1297 "music.ml" 54 1280 1325
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 54 1280 1285 "music.ml" 54 1280 1326
-call(
-  stack
-)
 type(
   int
 )
 "music.ml" 53 1252 1260 "music.ml" 54 1280 1327
-call(
-  stack
-)
 type(
   unit
 )
@@ -933,16 +897,10 @@ type(
   int
 )
 "music.ml" 55 1330 1359 "music.ml" 55 1330 1395
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 55 1330 1339 "music.ml" 55 1330 1396
-call(
-  tail
-)
 type(
   unit
 )
@@ -1010,9 +968,6 @@ ident(
   int_ref ticks_per_q "music.ml" 57 1400 1404 "music.ml" 57 1400 1415
 )
 "music.ml" 59 1422 1465 "music.ml" 59 1422 1487
-call(
-  stack
-)
 type(
   string
 )
@@ -1028,16 +983,10 @@ type(
   string
 )
 "music.ml" 59 1422 1464 "music.ml" 59 1422 1499
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 59 1422 1435 "music.ml" 59 1422 1499
-call(
-  stack
-)
 type(
   string
 )
@@ -1157,9 +1106,6 @@ ident(
   int_ref p "music.ml" 63 1550 1557 "music.ml" 63 1550 1558
 )
 "music.ml" 63 1550 1600 "music.ml" 63 1550 1610
-call(
-  stack
-)
 type(
   int
 )
@@ -1168,9 +1114,6 @@ type(
   int
 )
 "music.ml" 63 1550 1576 "music.ml" 63 1550 1612
-call(
-  tail
-)
 type(
   string
 )
@@ -1276,9 +1219,6 @@ type(
   float
 )
 "music.ml" 67 1672 1686 "music.ml" 67 1672 1724
-call(
-  stack
-)
 type(
   int
 )
@@ -1322,9 +1262,6 @@ ident(
   int_ref itime "music.ml" 67 1672 1678 "music.ml" 67 1672 1683
 )
 "music.ml" 68 1728 1755 "music.ml" 68 1728 1771
-call(
-  tail
-)
 type(
   string
 )
@@ -1372,9 +1309,6 @@ type(
   int
 )
 "music.ml" 69 1773 1785 "music.ml" 69 1773 1816
-call(
-  stack
-)
 type(
   string
 )
@@ -1421,23 +1355,14 @@ ident(
   ext_ref Pervasives.( mod )
 )
 "music.ml" 70 1819 1824 "music.ml" 70 1819 1865
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 69 1773 1784 "music.ml" 70 1819 1866
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 69 1773 1780 "music.ml" 70 1819 1866
-call(
-  tail
-)
 type(
   string
 )
@@ -1613,9 +1538,6 @@ ident(
   int_ref pitch "music.ml" 72 1868 1890 "music.ml" 72 1868 1895
 )
 "music.ml" 76 2004 2027 "music.ml" 76 2004 2040
-call(
-  stack
-)
 type(
   int * ('a * int) list
 )
@@ -1892,9 +1814,6 @@ type(
   unit
 )
 "music.ml" 84 2280 2300 "music.ml" 84 2280 2306
-call(
-  stack
-)
 type(
   event str
 )
@@ -1924,9 +1843,6 @@ ident(
   int_ref e "music.ml" 84 2280 2292 "music.ml" 84 2280 2293
 )
 "music.ml" 85 2310 2329 "music.ml" 85 2310 2339
-call(
-  stack
-)
 type(
   event
 )
@@ -2044,9 +1960,6 @@ type(
   unit
 )
 "music.ml" 90 2451 2459 "music.ml" 90 2451 2465
-call(
-  stack
-)
 type(
   event str
 )
@@ -2126,9 +2039,6 @@ ident(
   int_ref pitch "music.ml" 91 2471 2491 "music.ml" 91 2471 2496
 )
 "music.ml" 92 2511 2533 "music.ml" 92 2511 2552
-call(
-  stack
-)
 type(
   int * (pitch * int) list
 )
@@ -2147,9 +2057,6 @@ ident(
   int_ref t "music.ml" 91 2471 2488 "music.ml" 91 2471 2489
 )
 "music.ml" 93 2556 2567 "music.ml" 93 2556 2580
-call(
-  stack
-)
 type(
   string
 )
@@ -2186,9 +2093,6 @@ ident(
   int_ref pitch "music.ml" 91 2471 2491 "music.ml" 91 2471 2496
 )
 "music.ml" 93 2556 2588 "music.ml" 93 2556 2606
-call(
-  stack
-)
 type(
   string
 )
@@ -2214,9 +2118,6 @@ ident(
   int_ref vol "music.ml" 91 2471 2498 "music.ml" 91 2471 2501
 )
 "music.ml" 93 2556 2609 "music.ml" 93 2556 2623
-call(
-  stack
-)
 type(
   string
 )
@@ -2308,37 +2209,22 @@ type(
   (pitch * int) list
 )
 "music.ml" 94 2626 2639 "music.ml" 94 2626 2671
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 93 2556 2608 "music.ml" 94 2626 2672
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 93 2556 2587 "music.ml" 94 2626 2672
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 93 2556 2582 "music.ml" 94 2626 2672
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 93 2556 2566 "music.ml" 94 2626 2672
-call(
-  tail
-)
 type(
   string
 )
@@ -2415,9 +2301,6 @@ ident(
   int_ref pitch "music.ml" 95 2673 2693 "music.ml" 95 2673 2698
 )
 "music.ml" 96 2708 2730 "music.ml" 96 2708 2749
-call(
-  stack
-)
 type(
   int * (pitch * int) list
 )
@@ -2494,9 +2377,6 @@ ident(
   int_ref tl "music.ml" 95 2673 2701 "music.ml" 95 2673 2703
 )
 "music.ml" 97 2753 2787 "music.ml" 97 2753 2803
-call(
-  stack
-)
 type(
   event stream
 )
@@ -2545,9 +2425,6 @@ type(
   (pitch * int) list
 )
 "music.ml" 97 2753 2775 "music.ml" 97 2753 2823
-call(
-  tail
-)
 type(
   string
 )
@@ -2566,9 +2443,6 @@ ident(
   int_ref t "music.ml" 95 2673 2690 "music.ml" 95 2673 2691
 )
 "music.ml" 98 2824 2840 "music.ml" 98 2824 2853
-call(
-  stack
-)
 type(
   string
 )
@@ -2594,9 +2468,6 @@ ident(
   int_ref pitch "music.ml" 95 2673 2693 "music.ml" 95 2673 2698
 )
 "music.ml" 98 2824 2856 "music.ml" 98 2824 2874
-call(
-  stack
-)
 type(
   string
 )
@@ -2699,30 +2570,18 @@ type(
   (pitch * int) list
 )
 "music.ml" 99 2882 2893 "music.ml" 99 2882 2925
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 98 2824 2876 "music.ml" 99 2882 2926
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 98 2824 2855 "music.ml" 99 2882 2926
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 98 2824 2839 "music.ml" 99 2882 2926
-call(
-  tail
-)
 type(
   string
 )
@@ -2780,9 +2639,6 @@ type(
   (pitch * int) list
 )
 "music.ml" 100 2927 2932 "music.ml" 100 2927 2945
-call(
-  tail
-)
 type(
   string
 )
@@ -2855,9 +2711,6 @@ ident(
   int_ref str "music.ml" 102 2947 2974 "music.ml" 102 2947 2977
 )
 "music.ml" 103 2980 2992 "music.ml" 103 2980 3011
-call(
-  stack
-)
 type(
   string
 )
@@ -2883,9 +2736,6 @@ ident(
   int_ref filename "music.ml" 102 2947 2963 "music.ml" 102 2947 2971
 )
 "music.ml" 104 3015 3031 "music.ml" 104 3015 3052
-call(
-  stack
-)
 type(
   out_channel
 )
@@ -2911,9 +2761,6 @@ ident(
   int_ref header "music.ml" 59 1422 1426 "music.ml" 59 1422 1432
 )
 "music.ml" 105 3056 3058 "music.ml" 105 3056 3083
-call(
-  stack
-)
 type(
   unit
 )
@@ -2980,9 +2827,6 @@ type(
   int
 )
 "music.ml" 106 3085 3087 "music.ml" 106 3085 3142
-call(
-  stack
-)
 type(
   unit
 )
@@ -3008,9 +2852,6 @@ ident(
   int_ref hex "music.ml" 103 2980 2986 "music.ml" 103 2980 2989
 )
 "music.ml" 107 3144 3146 "music.ml" 107 3144 3168
-call(
-  stack
-)
 type(
   unit
 )
@@ -3036,9 +2877,6 @@ ident(
   int_ref footer "music.ml" 60 1500 1504 "music.ml" 60 1500 1510
 )
 "music.ml" 108 3170 3172 "music.ml" 108 3170 3197
-call(
-  stack
-)
 type(
   unit
 )
@@ -3057,9 +2895,6 @@ ident(
   int_ref outchan "music.ml" 104 3015 3021 "music.ml" 104 3015 3028
 )
 "music.ml" 109 3199 3201 "music.ml" 109 3199 3214
-call(
-  stack
-)
 type(
   unit
 )
@@ -3078,9 +2913,6 @@ ident(
   int_ref outchan "music.ml" 104 3015 3021 "music.ml" 104 3015 3028
 )
 "music.ml" 110 3216 3218 "music.ml" 110 3216 3243
-call(
-  tail
-)
 type(
   unit
 )
@@ -3337,9 +3169,6 @@ type(
   unit
 )
 "music.ml" 119 3488 3508 "music.ml" 119 3488 3514
-call(
-  stack
-)
 type(
   event str
 )
@@ -3369,9 +3198,6 @@ ident(
   int_ref e "music.ml" 119 3488 3500 "music.ml" 119 3488 3501
 )
 "music.ml" 120 3518 3537 "music.ml" 120 3518 3547
-call(
-  stack
-)
 type(
   event
 )
@@ -3456,9 +3282,6 @@ ident(
   int_ref lst "music.ml" 129 3955 3979 "music.ml" 129 3955 3982
 )
 "music.ml" 132 4068 4079 "music.ml" 132 4068 4097
-call(
-  tail
-)
 type(
   event stream
 )
@@ -3578,9 +3401,6 @@ ident(
   int_ref tl "music.ml" 133 4098 4107 "music.ml" 133 4098 4109
 )
 "music.ml" 135 4185 4241 "music.ml" 135 4185 4262
-call(
-  stack
-)
 type(
   event stream
 )
@@ -3640,16 +3460,10 @@ ident(
   int_ref tl "music.ml" 133 4098 4107 "music.ml" 133 4098 4109
 )
 "music.ml" 136 4267 4309 "music.ml" 136 4267 4330
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 136 4267 4294 "music.ml" 136 4267 4331
-call(
-  tail
-)
 type(
   event stream
 )
@@ -3680,9 +3494,6 @@ ident(
   int_ref lst "music.ml" 129 3955 3979 "music.ml" 129 3955 3982
 )
 "music.ml" 138 4351 4353 "music.ml" 138 4351 4375
-call(
-  tail
-)
 type(
   event stream
 )
@@ -3820,9 +3631,6 @@ ident(
   int_ref a "music.ml" 149 4723 4737 "music.ml" 149 4723 4738
 )
 "music.ml" 150 4791 4805 "music.ml" 150 4791 4811
-call(
-  stack
-)
 type(
   event
 )
@@ -3848,9 +3656,6 @@ ident(
   int_ref b "music.ml" 149 4723 4756 "music.ml" 149 4723 4757
 )
 "music.ml" 151 4815 4829 "music.ml" 151 4815 4835
-call(
-  stack
-)
 type(
   event
 )
@@ -3876,9 +3681,6 @@ ident(
   int_ref head1 "music.ml" 150 4791 4797 "music.ml" 150 4791 4802
 )
 "music.ml" 153 4843 4857 "music.ml" 153 4843 4876
-call(
-  stack
-)
 type(
   float
 )
@@ -3904,9 +3706,6 @@ ident(
   int_ref head2 "music.ml" 151 4815 4821 "music.ml" 151 4815 4826
 )
 "music.ml" 154 4880 4894 "music.ml" 154 4880 4913
-call(
-  stack
-)
 type(
   float
 )
@@ -3990,9 +3789,6 @@ ident(
   int_ref a "music.ml" 149 4723 4737 "music.ml" 149 4723 4738
 )
 "music.ml" 157 4943 4975 "music.ml" 157 4943 5003
-call(
-  stack
-)
 type(
   event stream
 )
@@ -4011,16 +3807,10 @@ ident(
   int_ref b "music.ml" 149 4723 4756 "music.ml" 149 4723 4757
 )
 "music.ml" 157 4943 5006 "music.ml" 157 4943 5012
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 157 4943 4969 "music.ml" 157 4943 5013
-call(
-  stack
-)
 type(
   event stream
 )
@@ -4065,9 +3855,6 @@ ident(
   int_ref a "music.ml" 149 4723 4737 "music.ml" 149 4723 4738
 )
 "music.ml" 159 5022 5054 "music.ml" 159 5022 5060
-call(
-  stack
-)
 type(
   event stream
 )
@@ -4108,16 +3895,10 @@ ident(
   int_ref b "music.ml" 149 4723 4756 "music.ml" 149 4723 4757
 )
 "music.ml" 159 5022 5063 "music.ml" 159 5022 5091
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 159 5022 5048 "music.ml" 159 5022 5092
-call(
-  stack
-)
 type(
   event stream
 )
@@ -4214,9 +3995,6 @@ ident(
   int_ref p "music.ml" 167 5361 5382 "music.ml" 167 5361 5383
 )
 "music.ml" 168 5403 5417 "music.ml" 168 5403 5427
-call(
-  stack
-)
 type(
   int
 )
@@ -4388,9 +4166,6 @@ type(
   int
 )
 "music.ml" 171 5521 5533 "music.ml" 171 5521 5562
-call(
-  stack
-)
 type(
   p
 )
@@ -4486,9 +4261,6 @@ ident(
   ext_ref Pervasives.( mod )
 )
 "music.ml" 172 5587 5597 "music.ml" 172 5587 5619
-call(
-  stack
-)
 type(
   p
 )
@@ -4648,9 +4420,6 @@ ident(
   int_ref half_steps "music.ml" 174 5641 5677 "music.ml" 174 5641 5687
 )
 "music.ml" 176 5755 5802 "music.ml" 176 5755 5830
-call(
-  stack
-)
 type(
   pitch
 )
@@ -4712,9 +4481,6 @@ ident(
   int_ref half_steps "music.ml" 174 5641 5677 "music.ml" 174 5641 5687
 )
 "music.ml" 177 5835 5881 "music.ml" 177 5835 5909
-call(
-  stack
-)
 type(
   pitch
 )
@@ -4752,9 +4518,6 @@ ident(
   int_ref str "music.ml" 174 5641 5656 "music.ml" 174 5641 5659
 )
 "music.ml" 179 5918 5922 "music.ml" 179 5918 5934
-call(
-  tail
-)
 type(
   event stream
 )
@@ -5008,16 +4771,10 @@ type(
   pitch list
 )
 "music.ml" 190 6215 6244 "music.ml" 191 6296 6358
-call(
-  stack
-)
 type(
   obj list
 )
 "music.ml" 190 6215 6228 "music.ml" 191 6296 6359
-call(
-  stack
-)
 type(
   event stream
 )
@@ -5047,9 +4804,6 @@ type(
   int
 )
 "music.ml" 193 6363 6376 "music.ml" 193 6363 6394
-call(
-  stack
-)
 type(
   event stream
 )
@@ -5082,9 +4836,6 @@ ident(
   int_ref scale2 "music.ml" 193 6363 6367 "music.ml" 193 6363 6373
 )
 "music.ml" 195 6398 6411 "music.ml" 195 6398 6429
-call(
-  stack
-)
 type(
   event stream
 )
@@ -5111,9 +4862,6 @@ ident(
   int_ref scales "music.ml" 195 6398 6402 "music.ml" 195 6398 6408
 )
 "music.ml" 197 6433 6433 "music.ml" 197 6433 6466
-call(
-  stack
-)
 type(
   unit
 )
@@ -5278,16 +5026,10 @@ type(
   pitch list
 )
 "music.ml" 202 6530 6557 "music.ml" 203 6610 6673
-call(
-  stack
-)
 type(
   obj list
 )
 "music.ml" 202 6530 6541 "music.ml" 203 6610 6674
-call(
-  stack
-)
 type(
   event stream
 )
@@ -5861,9 +5603,6 @@ ident(
   int_ref slow "music.ml" 205 6678 6682 "music.ml" 205 6678 6686
 )
 "music.ml" 210 6935 6965 "music.ml" 210 6935 6989
-call(
-  stack
-)
 type(
   obj list
 )
@@ -5896,23 +5635,14 @@ ident(
   int_ref fast "music.ml" 207 6807 6811 "music.ml" 207 6807 6815
 )
 "music.ml" 211 6993 7010 "music.ml" 211 6993 7033
-call(
-  stack
-)
 type(
   obj list
 )
 "music.ml" 210 6935 6964 "music.ml" 211 6993 7034
-call(
-  stack
-)
 type(
   obj list
 )
 "music.ml" 210 6935 6948 "music.ml" 211 6993 7035
-call(
-  stack
-)
 type(
   event stream
 )
@@ -5974,9 +5704,6 @@ ident(
   int_ref melody "music.ml" 210 6935 6939 "music.ml" 210 6935 6945
 )
 "music.ml" 227 7567 7614 "music.ml" 227 7567 7636
-call(
-  stack
-)
 type(
   event stream
 )
@@ -6013,37 +5740,22 @@ ident(
   int_ref melody "music.ml" 210 6935 6939 "music.ml" 210 6935 6945
 )
 "music.ml" 227 7567 7653 "music.ml" 227 7567 7675
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 227 7567 7640 "music.ml" 227 7567 7676
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 227 7567 7608 "music.ml" 227 7567 7677
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 227 7567 7591 "music.ml" 227 7567 7678
-call(
-  stack
-)
 type(
   event stream
 )
 "music.ml" 227 7567 7580 "music.ml" 227 7567 7679
-call(
-  stack
-)
 type(
   event stream
 )
@@ -6245,9 +5957,6 @@ type(
   obj list
 )
 "music.ml" 232 7739 7751 "music.ml" 234 7891 7965
-call(
-  stack
-)
 type(
   event stream
 )
@@ -6465,9 +6174,6 @@ type(
   obj list
 )
 "music.ml" 236 7969 7981 "music.ml" 239 8187 8235
-call(
-  stack
-)
 type(
   event stream
 )
@@ -6657,9 +6363,6 @@ type(
   obj list
 )
 "music.ml" 241 8239 8251 "music.ml" 244 8431 8479
-call(
-  stack
-)
 type(
   event stream
 )
@@ -6945,9 +6648,6 @@ type(
   obj list
 )
 "music.ml" 246 8483 8495 "music.ml" 250 8759 8830
-call(
-  stack
-)
 type(
   event stream
 )
@@ -7082,9 +6782,6 @@ ident(
   int_ref tl "music.ml" 259 9029 9038 "music.ml" 259 9029 9040
 )
 "music.ml" 259 9029 9071 "music.ml" 259 9029 9084
-call(
-  tail
-)
 type(
   bool
 )
@@ -7194,23 +6891,14 @@ ident(
   int_ref tl "music.ml" 264 9168 9177 "music.ml" 264 9168 9179
 )
 "music.ml" 264 9168 9196 "music.ml" 264 9168 9208
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 264 9168 9189 "music.ml" 264 9168 9209
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 264 9168 9183 "music.ml" 264 9168 9209
-call(
-  tail
-)
 type(
   string
 )
@@ -7230,7 +6918,7 @@ type(
   unit
 )
 ident(
-  def prompt "music.ml" 278 9742 9742 "music.ml" 1 0 -1
+  def prompt "music.ml" 278 9754 9754 "music.ml" 1 0 -1
 )
 "music.ml" 267 9233 9242 "music.ml" 267 9233 9247
 type(
@@ -7276,9 +6964,6 @@ ident(
   int_ref emotions "music.ml" 254 8897 8901 "music.ml" 254 8897 8909
 )
 "music.ml" 267 9233 9298 "music.ml" 267 9233 9316
-call(
-  stack
-)
 type(
   string
 )
@@ -7294,23 +6979,14 @@ type(
   string
 )
 "music.ml" 267 9233 9298 "music.ml" 267 9233 9322
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 267 9233 9292 "music.ml" 267 9233 9322
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 267 9233 9250 "music.ml" 267 9233 9322
-call(
-  stack
-)
 type(
   string
 )
@@ -7336,9 +7012,6 @@ ident(
   int_ref words "music.ml" 267 9233 9242 "music.ml" 267 9233 9247
 )
 "music.ml" 268 9327 9344 "music.ml" 268 9327 9362
-call(
-  stack
-)
 type(
   unit
 )
@@ -7364,9 +7037,6 @@ ident(
   int_ref line "music.ml" 268 9327 9336 "music.ml" 268 9327 9340
 )
 "music.ml" 269 9366 9384 "music.ml" 269 9366 9398
-call(
-  stack
-)
 type(
   string
 )
@@ -7392,9 +7062,6 @@ ident(
   int_ref input "music.ml" 269 9366 9375 "music.ml" 269 9366 9380
 )
 "music.ml" 270 9402 9422 "music.ml" 270 9402 9444
-call(
-  stack
-)
 type(
   string
 )
@@ -7406,9 +7073,6 @@ ident(
   int_ref emotions "music.ml" 254 8897 8901 "music.ml" 254 8897 8909
 )
 "music.ml" 270 9402 9414 "music.ml" 270 9402 9454
-call(
-  stack
-)
 type(
   bool
 )
@@ -7449,16 +7113,10 @@ type(
   string
 )
 "music.ml" 271 9462 9505 "music.ml" 271 9462 9519
-call(
-  stack
-)
 type(
   string
 )
 "music.ml" 271 9462 9497 "music.ml" 271 9462 9519
-call(
-  stack
-)
 type(
   string
 )
@@ -7488,9 +7146,6 @@ ident(
   int_ref canon "music.ml" 227 7567 7571 "music.ml" 227 7567 7576
 )
 "music.ml" 272 9521 9544 "music.ml" 272 9521 9575
-call(
-  stack
-)
 type(
   unit
 )
@@ -7514,9 +7169,6 @@ type(
   string
 )
 "music.ml" 274 9590 9611 "music.ml" 274 9590 9664
-call(
-  stack
-)
 type(
   unit
 )
@@ -7536,9 +7188,6 @@ type(
   unit
 )
 "music.ml" 275 9669 9690 "music.ml" 275 9669 9706
-call(
-  stack
-)
 type(
   unit
 )
@@ -7554,9 +7203,6 @@ type(
   unit
 )
 "music.ml" 276 9712 9724 "music.ml" 276 9712 9740
-call(
-  stack
-)
 type(
   unit
 )
@@ -7587,378 +7233,210 @@ type(
 type(
   unit
 )
-"music.ml" 278 9742 9746 "music.ml" 278 9742 9762
+"music.ml" 278 9754 9762 "music.ml" 278 9754 9786
 type(
-  int -> float array
+  p list -> int list -> int list
 )
 ident(
-  def next_note_helper "music.ml" 283 10238 10238 "music.ml" 1 0 -1
+  def convert_plist_to_intlist "music.ml" 278 9754 9754 "music.ml" 1 0 -1
 )
-"music.ml" 278 9742 9764 "music.ml" 278 9742 9769
+"music.ml" 278 9754 9788 "music.ml" 278 9754 9793
+type(
+  p list
+)
+ident(
+  def notes "music.ml" 278 9754 9805 "music.ml" 281 9889 9956
+)
+"music.ml" 278 9754 9806 "music.ml" 278 9754 9813
+type(
+  int list
+)
+ident(
+  def intlist "music.ml" 278 9754 9826 "music.ml" 281 9889 9956
+)
+"music.ml" 279 9838 9849 "music.ml" 279 9838 9854
+type(
+  p list
+)
+ident(
+  int_ref notes "music.ml" 278 9754 9788 "music.ml" 278 9754 9793
+)
+"music.ml" 280 9860 9866 "music.ml" 280 9860 9868
+type(
+  p list
+)
+"music.ml" 280 9860 9872 "music.ml" 280 9860 9880
+type(
+  int list -> int list
+)
+ident(
+  ext_ref Core.Std.List.rev
+)
+"music.ml" 280 9860 9881 "music.ml" 280 9860 9888
+type(
+  int list
+)
+ident(
+  int_ref intlist "music.ml" 278 9754 9806 "music.ml" 278 9754 9813
+)
+"music.ml" 280 9860 9872 "music.ml" 280 9860 9888
+type(
+  int list
+)
+"music.ml" 281 9889 9895 "music.ml" 281 9889 9897
+type(
+  p
+)
+ident(
+  def hd "music.ml" 281 9889 9904 "music.ml" 281 9889 9956
+)
+"music.ml" 281 9889 9899 "music.ml" 281 9889 9901
+type(
+  p list
+)
+ident(
+  def tl "music.ml" 281 9889 9904 "music.ml" 281 9889 9956
+)
+"music.ml" 281 9889 9895 "music.ml" 281 9889 9901
+type(
+  p list
+)
+"music.ml" 281 9889 9904 "music.ml" 281 9889 9928
+type(
+  p list -> int list -> int list
+)
+ident(
+  int_ref convert_plist_to_intlist "music.ml" 278 9754 9762 "music.ml" 278 9754 9786
+)
+"music.ml" 281 9889 9929 "music.ml" 281 9889 9931
+type(
+  p list
+)
+ident(
+  int_ref tl "music.ml" 281 9889 9899 "music.ml" 281 9889 9901
+)
+"music.ml" 281 9889 9934 "music.ml" 281 9889 9942
+type(
+  p -> int
+)
+ident(
+  int_ref p_to_int "music.ml" 15 307 311 "music.ml" 15 307 319
+)
+"music.ml" 281 9889 9943 "music.ml" 281 9889 9945
+type(
+  p
+)
+ident(
+  int_ref hd "music.ml" 281 9889 9895 "music.ml" 281 9889 9897
+)
+"music.ml" 281 9889 9934 "music.ml" 281 9889 9945
+type(
+  int
+)
+"music.ml" 281 9889 9948 "music.ml" 281 9889 9955
+type(
+  int list
+)
+ident(
+  int_ref intlist "music.ml" 278 9754 9806 "music.ml" 278 9754 9813
+)
+"music.ml" 281 9889 9933 "music.ml" 281 9889 9955
+type(
+  int list
+)
+"music.ml" 281 9889 9904 "music.ml" 281 9889 9956
+type(
+  int list
+)
+"music.ml" 279 9838 9843 "music.ml" 281 9889 9956
+type(
+  int list
+)
+type(
+  int list
+)
+"music.ml" 278 9754 9805 "music.ml" 281 9889 9956
+type(
+  int list -> int list
+)
+"music.ml" 278 9754 9787 "music.ml" 281 9889 9956
+type(
+  p list -> int list -> int list
+)
+"music.ml" 283 9980 9984 "music.ml" 283 9980 9995
+type(
+  float array array
+)
+ident(
+  def main_matrix "music.ml" 285 10023 10023 "music.ml" 1 0 -1
+)
+"music.ml" 283 9980 9998 "music.ml" 283 9980 10021
+type(
+  float array array
+)
+ident(
+  ext_ref Matrix.Mus_matrix.music_matrix
+)
+"music.ml" 285 10023 10027 "music.ml" 285 10023 10047
+type(
+  int -> int -> unit
+)
+ident(
+  def increment_matrix_val "music.ml" 289 10156 10156 "music.ml" 1 0 -1
+)
+"music.ml" 285 10023 10049 "music.ml" 285 10023 10052
 type(
   int
 )
 ident(
-  def index "music.ml" 278 9742 9777 "music.ml" 280 9857 9899
+  def row "music.ml" 285 10023 10058 "music.ml" 287 10116 10154
 )
-"music.ml" 279 9794 9802 "music.ml" 279 9794 9811
-type(
-  float array
-)
-ident(
-  def new_array "music.ml" 280 9857 9865 "music.ml" 280 9857 9899
-)
-"music.ml" 279 9794 9816 "music.ml" 279 9794 9818
-type(
-  float
-)
-"music.ml" 279 9794 9819 "music.ml" 279 9794 9821
-type(
-  float
-)
-"music.ml" 279 9794 9822 "music.ml" 279 9794 9824
-type(
-  float
-)
-"music.ml" 279 9794 9825 "music.ml" 279 9794 9827
-type(
-  float
-)
-"music.ml" 279 9794 9828 "music.ml" 279 9794 9830
-type(
-  float
-)
-"music.ml" 279 9794 9831 "music.ml" 279 9794 9833
-type(
-  float
-)
-"music.ml" 279 9794 9834 "music.ml" 279 9794 9836
-type(
-  float
-)
-"music.ml" 279 9794 9837 "music.ml" 279 9794 9839
-type(
-  float
-)
-"music.ml" 279 9794 9840 "music.ml" 279 9794 9842
-type(
-  float
-)
-"music.ml" 279 9794 9843 "music.ml" 279 9794 9845
-type(
-  float
-)
-"music.ml" 279 9794 9846 "music.ml" 279 9794 9848
-type(
-  float
-)
-"music.ml" 279 9794 9849 "music.ml" 279 9794 9851
-type(
-  float
-)
-"music.ml" 279 9794 9814 "music.ml" 279 9794 9853
-type(
-  float array
-)
-"music.ml" 280 9857 9865 "music.ml" 280 9857 9874
-type(
-  float array
-)
-ident(
-  int_ref new_array "music.ml" 279 9794 9802 "music.ml" 279 9794 9811
-)
-"music.ml" 280 9857 9876 "music.ml" 280 9857 9881
+"music.ml" 285 10023 10059 "music.ml" 285 10023 10062
 type(
   int
 )
 ident(
-  int_ref index "music.ml" 278 9742 9764 "music.ml" 278 9742 9769
+  def col "music.ml" 285 10023 10068 "music.ml" 287 10116 10154
 )
-"music.ml" 280 9857 9865 "music.ml" 280 9857 9882
-type(
-  float array -> int -> float -> unit
-)
-ident(
-  ext_ref Core.Std.Array.set
-)
-"music.ml" 280 9857 9886 "music.ml" 280 9857 9888
+"music.ml" 286 10077 10085 "music.ml" 286 10077 10086
 type(
   float
 )
-"music.ml" 280 9857 9865 "music.ml" 280 9857 9888
-type(
-  unit
+ident(
+  def n "music.ml" 287 10116 10120 "music.ml" 287 10116 10154
 )
-"music.ml" 280 9857 9890 "music.ml" 280 9857 9899
+"music.ml" 286 10077 10089 "music.ml" 286 10077 10100
 type(
-  float array
+  float array array
 )
 ident(
-  int_ref new_array "music.ml" 279 9794 9802 "music.ml" 279 9794 9811
+  int_ref main_matrix "music.ml" 283 9980 9984 "music.ml" 283 9980 9995
 )
-"music.ml" 280 9857 9865 "music.ml" 280 9857 9899
+"music.ml" 286 10077 10102 "music.ml" 286 10077 10105
 type(
-  float array
+  int
 )
-"music.ml" 279 9794 9798 "music.ml" 280 9857 9899
+ident(
+  int_ref row "music.ml" 285 10023 10049 "music.ml" 285 10023 10052
+)
+"music.ml" 286 10077 10089 "music.ml" 286 10077 10106
 type(
   float array
 )
 type(
-  float array
-)
-"music.ml" 278 9742 9763 "music.ml" 280 9857 9899
-type(
-  int -> float array
-)
-"music.ml" 283 10238 10242 "music.ml" 283 10238 10251
-type(
-  float array -> float -> float array
+  float array array -> int -> float array
 )
 ident(
-  def next_note "music.ml" 293 10610 10646 "music.ml" 1 0 -1
+  ext_ref Core.Std.Array.get
 )
-"music.ml" 283 10238 10253 "music.ml" 283 10238 10265
-type(
-  float array
-)
-ident(
-  def current_prob "music.ml" 283 10238 10281 "music.ml" 293 10610 10646
-)
-"music.ml" 283 10238 10282 "music.ml" 283 10238 10293
-type(
-  float
-)
-ident(
-  def sum_of_rows "music.ml" 283 10238 10303 "music.ml" 293 10610 10646
-)
-"music.ml" 284 10320 10326 "music.ml" 284 10320 10330
+"music.ml" 286 10077 10108 "music.ml" 286 10077 10111
 type(
   int
 )
 ident(
-  def rand "music.ml" 285 10374 10376 "music.ml" 293 10610 10646
+  int_ref col "music.ml" 285 10023 10059 "music.ml" 285 10023 10062
 )
-"music.ml" 284 10320 10333 "music.ml" 284 10320 10343
-type(
-  int -> int
-)
-ident(
-  ext_ref Core.Std.Random.int
-)
-"music.ml" 284 10320 10345 "music.ml" 284 10320 10357
-type(
-  float -> int
-)
-ident(
-  ext_ref Core.Std.Float.to_int
-)
-"music.ml" 284 10320 10358 "music.ml" 284 10320 10369
-type(
-  float
-)
-ident(
-  int_ref sum_of_rows "music.ml" 283 10238 10282 "music.ml" 283 10238 10293
-)
-"music.ml" 284 10320 10345 "music.ml" 284 10320 10369
-call(
-  stack
-)
-type(
-  int
-)
-"music.ml" 284 10320 10333 "music.ml" 284 10320 10370
-call(
-  stack
-)
-type(
-  int
-)
-"music.ml" 285 10374 10380 "music.ml" 285 10374 10384
-type(
-  float
-)
-ident(
-  def prob "music.ml" 286 10411 10415 "music.ml" 293 10610 10646
-)
-"music.ml" 285 10374 10388 "music.ml" 285 10374 10400
-type(
-  int -> float
-)
-ident(
-  ext_ref Core.Std.Int.to_float
-)
-"music.ml" 285 10374 10401 "music.ml" 285 10374 10405
-type(
-  int
-)
-ident(
-  int_ref rand "music.ml" 284 10320 10326 "music.ml" 284 10320 10330
-)
-"music.ml" 285 10374 10388 "music.ml" 285 10374 10405
-call(
-  stack
-)
-type(
-  float
-)
-"music.ml" 286 10411 10419 "music.ml" 286 10411 10422
-type(
-  int ref
-)
-ident(
-  def ans "music.ml" 287 10435 10439 "music.ml" 293 10610 10646
-)
-"music.ml" 286 10411 10425 "music.ml" 286 10411 10428
-type(
-  int -> int ref
-)
-ident(
-  ext_ref Pervasives.ref
-)
-"music.ml" 286 10411 10429 "music.ml" 286 10411 10430
-type(
-  int
-)
-"music.ml" 286 10411 10425 "music.ml" 286 10411 10430
-type(
-  int ref
-)
-"music.ml" 287 10435 10443 "music.ml" 287 10435 10446
-type(
-  float ref
-)
-ident(
-  def sum "music.ml" 288 10460 10464 "music.ml" 293 10610 10646
-)
-"music.ml" 287 10435 10449 "music.ml" 287 10435 10452
-type(
-  float -> float ref
-)
-ident(
-  ext_ref Pervasives.ref
-)
-"music.ml" 287 10435 10453 "music.ml" 287 10435 10456
-type(
-  float
-)
-"music.ml" 287 10435 10449 "music.ml" 287 10435 10456
-type(
-  float ref
-)
-"music.ml" 288 10460 10468 "music.ml" 288 10460 10473
-type(
-  int ref
-)
-ident(
-  def index "music.ml" 289 10486 10494 "music.ml" 293 10610 10646
-)
-"music.ml" 288 10460 10476 "music.ml" 288 10460 10479
-type(
-  int -> int ref
-)
-ident(
-  ext_ref Pervasives.ref
-)
-"music.ml" 288 10460 10480 "music.ml" 288 10460 10481
-type(
-  int
-)
-"music.ml" 288 10460 10476 "music.ml" 288 10460 10481
-type(
-  int ref
-)
-"music.ml" 289 10486 10501 "music.ml" 289 10486 10504
-type(
-  float ref
-)
-ident(
-  int_ref sum "music.ml" 287 10435 10443 "music.ml" 287 10435 10446
-)
-"music.ml" 289 10486 10500 "music.ml" 289 10486 10504
-type(
-  float
-)
-type(
-  float ref -> float
-)
-ident(
-  ext_ref Pervasives.( ! )
-)
-"music.ml" 289 10486 10505 "music.ml" 289 10486 10506
-type(
-  float -> float -> bool
-)
-ident(
-  ext_ref Pervasives.( < )
-)
-"music.ml" 289 10486 10507 "music.ml" 289 10486 10511
-type(
-  float
-)
-ident(
-  int_ref prob "music.ml" 285 10374 10380 "music.ml" 285 10374 10384
-)
-"music.ml" 289 10486 10500 "music.ml" 289 10486 10511
-type(
-  bool
-)
-"music.ml" 290 10516 10524 "music.ml" 290 10516 10527
-type(
-  float ref
-)
-ident(
-  int_ref sum "music.ml" 287 10435 10443 "music.ml" 287 10435 10446
-)
-"music.ml" 290 10516 10531 "music.ml" 290 10516 10534
-type(
-  float ref
-)
-ident(
-  int_ref sum "music.ml" 287 10435 10443 "music.ml" 287 10435 10446
-)
-"music.ml" 290 10516 10530 "music.ml" 290 10516 10534
-type(
-  float
-)
-type(
-  float ref -> float
-)
-ident(
-  ext_ref Pervasives.( ! )
-)
-"music.ml" 290 10516 10535 "music.ml" 290 10516 10537
-type(
-  float -> float -> float
-)
-ident(
-  ext_ref Pervasives.( +. )
-)
-"music.ml" 290 10516 10538 "music.ml" 290 10516 10550
-type(
-  float array
-)
-ident(
-  int_ref current_prob "music.ml" 283 10238 10253 "music.ml" 283 10238 10265
-)
-"music.ml" 290 10516 10553 "music.ml" 290 10516 10558
-type(
-  int ref
-)
-ident(
-  int_ref index "music.ml" 288 10460 10468 "music.ml" 288 10460 10473
-)
-"music.ml" 290 10516 10552 "music.ml" 290 10516 10558
-type(
-  int
-)
-type(
-  int ref -> int
-)
-ident(
-  ext_ref Pervasives.( ! )
-)
-"music.ml" 290 10516 10538 "music.ml" 290 10516 10559
+"music.ml" 286 10077 10089 "music.ml" 286 10077 10112
 type(
   float
 )
@@ -7968,11 +7446,629 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"music.ml" 290 10516 10530 "music.ml" 290 10516 10559
+"music.ml" 287 10116 10120 "music.ml" 287 10116 10131
+type(
+  float array array
+)
+ident(
+  int_ref main_matrix "music.ml" 283 9980 9984 "music.ml" 283 9980 9995
+)
+"music.ml" 287 10116 10133 "music.ml" 287 10116 10136
+type(
+  int
+)
+ident(
+  int_ref row "music.ml" 285 10023 10049 "music.ml" 285 10023 10052
+)
+"music.ml" 287 10116 10120 "music.ml" 287 10116 10137
+type(
+  float array
+)
+type(
+  float array array -> int -> float array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"music.ml" 287 10116 10139 "music.ml" 287 10116 10142
+type(
+  int
+)
+ident(
+  int_ref col "music.ml" 285 10023 10059 "music.ml" 285 10023 10062
+)
+"music.ml" 287 10116 10120 "music.ml" 287 10116 10143
+type(
+  float array -> int -> float -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"music.ml" 287 10116 10147 "music.ml" 287 10116 10148
 type(
   float
 )
-"music.ml" 290 10516 10524 "music.ml" 290 10516 10559
+ident(
+  int_ref n "music.ml" 286 10077 10085 "music.ml" 286 10077 10086
+)
+"music.ml" 287 10116 10149 "music.ml" 287 10116 10151
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"music.ml" 287 10116 10152 "music.ml" 287 10116 10154
+type(
+  float
+)
+"music.ml" 287 10116 10147 "music.ml" 287 10116 10154
+type(
+  float
+)
+"music.ml" 287 10116 10120 "music.ml" 287 10116 10154
+type(
+  unit
+)
+"music.ml" 286 10077 10081 "music.ml" 287 10116 10154
+type(
+  unit
+)
+type(
+  unit
+)
+"music.ml" 285 10023 10058 "music.ml" 287 10116 10154
+type(
+  int -> unit
+)
+"music.ml" 285 10023 10048 "music.ml" 287 10116 10154
+type(
+  int -> int -> unit
+)
+"music.ml" 289 10156 10164 "music.ml" 289 10156 10176
+type(
+  int list -> float array array
+)
+ident(
+  def note_counter "music.ml" 289 10156 10156 "music.ml" 1 0 -1
+)
+"music.ml" 289 10156 10178 "music.ml" 289 10156 10188
+type(
+  int list
+)
+ident(
+  def notes_list "music.ml" 289 10156 10201 "music.ml" 293 10324 10398
+)
+"music.ml" 290 10223 10233 "music.ml" 290 10223 10243
+type(
+  int list
+)
+ident(
+  int_ref notes_list "music.ml" 289 10156 10178 "music.ml" 289 10156 10188
+)
+"music.ml" 291 10249 10255 "music.ml" 291 10249 10257
+type(
+  int list
+)
+"music.ml" 291 10249 10261 "music.ml" 291 10249 10266
+type(
+  exn -> float array array
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"music.ml" 291 10249 10276 "music.ml" 291 10249 10296
+type(
+  string
+)
+"music.ml" 291 10249 10268 "music.ml" 291 10249 10296
+type(
+  exn
+)
+"music.ml" 291 10249 10261 "music.ml" 291 10249 10297
+type(
+  float array array
+)
+"music.ml" 292 10298 10305 "music.ml" 292 10298 10307
+type(
+  int list
+)
+type(
+  int
+)
+ident(
+  def hd "music.ml" 292 10298 10312 "music.ml" 292 10298 10323
+)
+"music.ml" 292 10298 10304 "music.ml" 292 10298 10308
+type(
+  int list
+)
+"music.ml" 292 10298 10312 "music.ml" 292 10298 10323
+type(
+  float array array
+)
+ident(
+  int_ref main_matrix "music.ml" 283 9980 9984 "music.ml" 283 9980 9995
+)
+"music.ml" 293 10324 10330 "music.ml" 293 10324 10333
+type(
+  int
+)
+ident(
+  def hd1 "music.ml" 293 10324 10346 "music.ml" 293 10324 10398
+)
+"music.ml" 293 10324 10335 "music.ml" 293 10324 10338
+type(
+  int
+)
+ident(
+  def hd2 "music.ml" 293 10324 10346 "music.ml" 293 10324 10398
+)
+"music.ml" 293 10324 10340 "music.ml" 293 10324 10342
+type(
+  int list
+)
+ident(
+  def tl "music.ml" 293 10324 10346 "music.ml" 293 10324 10398
+)
+"music.ml" 293 10324 10335 "music.ml" 293 10324 10342
+type(
+  int list
+)
+"music.ml" 293 10324 10330 "music.ml" 293 10324 10342
+type(
+  int list
+)
+"music.ml" 293 10324 10346 "music.ml" 293 10324 10366
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref increment_matrix_val "music.ml" 285 10023 10027 "music.ml" 285 10023 10047
+)
+"music.ml" 293 10324 10367 "music.ml" 293 10324 10370
+type(
+  int
+)
+ident(
+  int_ref hd1 "music.ml" 293 10324 10330 "music.ml" 293 10324 10333
+)
+"music.ml" 293 10324 10371 "music.ml" 293 10324 10374
+type(
+  int
+)
+ident(
+  int_ref hd2 "music.ml" 293 10324 10335 "music.ml" 293 10324 10338
+)
+"music.ml" 293 10324 10346 "music.ml" 293 10324 10374
+type(
+  unit
+)
+"music.ml" 293 10324 10376 "music.ml" 293 10324 10388
+type(
+  int list -> float array array
+)
+ident(
+  int_ref note_counter "music.ml" 289 10156 10164 "music.ml" 289 10156 10176
+)
+"music.ml" 293 10324 10390 "music.ml" 293 10324 10393
+type(
+  int
+)
+ident(
+  int_ref hd2 "music.ml" 293 10324 10335 "music.ml" 293 10324 10338
+)
+"music.ml" 293 10324 10395 "music.ml" 293 10324 10397
+type(
+  int list
+)
+ident(
+  int_ref tl "music.ml" 293 10324 10340 "music.ml" 293 10324 10342
+)
+"music.ml" 293 10324 10390 "music.ml" 293 10324 10397
+type(
+  int list
+)
+"music.ml" 293 10324 10376 "music.ml" 293 10324 10398
+type(
+  float array array
+)
+"music.ml" 293 10324 10346 "music.ml" 293 10324 10398
+type(
+  float array array
+)
+"music.ml" 290 10223 10227 "music.ml" 293 10324 10398
+type(
+  float array array
+)
+type(
+  float array array
+)
+"music.ml" 289 10156 10177 "music.ml" 293 10324 10398
+type(
+  int list -> float array array
+)
+"music.ml" 295 10413 10417 "music.ml" 295 10413 10433
+type(
+  int -> float array
+)
+ident(
+  def next_note_helper "music.ml" 300 10912 10912 "music.ml" 1 0 -1
+)
+"music.ml" 295 10413 10435 "music.ml" 295 10413 10440
+type(
+  int
+)
+ident(
+  def index "music.ml" 295 10413 10448 "music.ml" 297 10531 10573
+)
+"music.ml" 296 10465 10473 "music.ml" 296 10465 10482
+type(
+  float array
+)
+ident(
+  def new_array "music.ml" 297 10531 10539 "music.ml" 297 10531 10573
+)
+"music.ml" 296 10465 10487 "music.ml" 296 10465 10489
+type(
+  float
+)
+"music.ml" 296 10465 10490 "music.ml" 296 10465 10492
+type(
+  float
+)
+"music.ml" 296 10465 10493 "music.ml" 296 10465 10495
+type(
+  float
+)
+"music.ml" 296 10465 10496 "music.ml" 296 10465 10498
+type(
+  float
+)
+"music.ml" 296 10465 10499 "music.ml" 296 10465 10501
+type(
+  float
+)
+"music.ml" 296 10465 10502 "music.ml" 296 10465 10504
+type(
+  float
+)
+"music.ml" 296 10465 10505 "music.ml" 296 10465 10507
+type(
+  float
+)
+"music.ml" 296 10465 10508 "music.ml" 296 10465 10510
+type(
+  float
+)
+"music.ml" 296 10465 10511 "music.ml" 296 10465 10513
+type(
+  float
+)
+"music.ml" 296 10465 10514 "music.ml" 296 10465 10516
+type(
+  float
+)
+"music.ml" 296 10465 10517 "music.ml" 296 10465 10519
+type(
+  float
+)
+"music.ml" 296 10465 10520 "music.ml" 296 10465 10522
+type(
+  float
+)
+"music.ml" 296 10465 10523 "music.ml" 296 10465 10525
+type(
+  float
+)
+"music.ml" 296 10465 10485 "music.ml" 296 10465 10527
+type(
+  float array
+)
+"music.ml" 297 10531 10539 "music.ml" 297 10531 10548
+type(
+  float array
+)
+ident(
+  int_ref new_array "music.ml" 296 10465 10473 "music.ml" 296 10465 10482
+)
+"music.ml" 297 10531 10550 "music.ml" 297 10531 10555
+type(
+  int
+)
+ident(
+  int_ref index "music.ml" 295 10413 10435 "music.ml" 295 10413 10440
+)
+"music.ml" 297 10531 10539 "music.ml" 297 10531 10556
+type(
+  float array -> int -> float -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"music.ml" 297 10531 10560 "music.ml" 297 10531 10562
+type(
+  float
+)
+"music.ml" 297 10531 10539 "music.ml" 297 10531 10562
+type(
+  unit
+)
+"music.ml" 297 10531 10564 "music.ml" 297 10531 10573
+type(
+  float array
+)
+ident(
+  int_ref new_array "music.ml" 296 10465 10473 "music.ml" 296 10465 10482
+)
+"music.ml" 297 10531 10539 "music.ml" 297 10531 10573
+type(
+  float array
+)
+"music.ml" 296 10465 10469 "music.ml" 297 10531 10573
+type(
+  float array
+)
+type(
+  float array
+)
+"music.ml" 295 10413 10434 "music.ml" 297 10531 10573
+type(
+  int -> float array
+)
+"music.ml" 300 10912 10916 "music.ml" 300 10912 10925
+type(
+  float array -> float -> float array
+)
+ident(
+  def next_note "music.ml" 314 11324 11324 "music.ml" 1 0 -1
+)
+"music.ml" 300 10912 10927 "music.ml" 300 10912 10939
+type(
+  float array
+)
+ident(
+  def current_prob "music.ml" 300 10912 10955 "music.ml" 310 11284 11320
+)
+"music.ml" 300 10912 10956 "music.ml" 300 10912 10967
+type(
+  float
+)
+ident(
+  def sum_of_rows "music.ml" 300 10912 10977 "music.ml" 310 11284 11320
+)
+"music.ml" 301 10994 11000 "music.ml" 301 10994 11004
+type(
+  int
+)
+ident(
+  def rand "music.ml" 302 11048 11050 "music.ml" 310 11284 11320
+)
+"music.ml" 301 10994 11007 "music.ml" 301 10994 11017
+type(
+  int -> int
+)
+ident(
+  ext_ref Core.Std.Random.int
+)
+"music.ml" 301 10994 11019 "music.ml" 301 10994 11031
+type(
+  float -> int
+)
+ident(
+  ext_ref Core.Std.Float.to_int
+)
+"music.ml" 301 10994 11032 "music.ml" 301 10994 11043
+type(
+  float
+)
+ident(
+  int_ref sum_of_rows "music.ml" 300 10912 10956 "music.ml" 300 10912 10967
+)
+"music.ml" 301 10994 11019 "music.ml" 301 10994 11043
+type(
+  int
+)
+"music.ml" 301 10994 11007 "music.ml" 301 10994 11044
+type(
+  int
+)
+"music.ml" 302 11048 11054 "music.ml" 302 11048 11058
+type(
+  float
+)
+ident(
+  def prob "music.ml" 303 11085 11089 "music.ml" 310 11284 11320
+)
+"music.ml" 302 11048 11062 "music.ml" 302 11048 11074
+type(
+  int -> float
+)
+ident(
+  ext_ref Core.Std.Int.to_float
+)
+"music.ml" 302 11048 11075 "music.ml" 302 11048 11079
+type(
+  int
+)
+ident(
+  int_ref rand "music.ml" 301 10994 11000 "music.ml" 301 10994 11004
+)
+"music.ml" 302 11048 11062 "music.ml" 302 11048 11079
+type(
+  float
+)
+"music.ml" 303 11085 11093 "music.ml" 303 11085 11096
+type(
+  int ref
+)
+ident(
+  def ans "music.ml" 304 11109 11113 "music.ml" 310 11284 11320
+)
+"music.ml" 303 11085 11099 "music.ml" 303 11085 11102
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"music.ml" 303 11085 11103 "music.ml" 303 11085 11104
+type(
+  int
+)
+"music.ml" 303 11085 11099 "music.ml" 303 11085 11104
+type(
+  int ref
+)
+"music.ml" 304 11109 11117 "music.ml" 304 11109 11120
+type(
+  float ref
+)
+ident(
+  def sum "music.ml" 305 11134 11138 "music.ml" 310 11284 11320
+)
+"music.ml" 304 11109 11123 "music.ml" 304 11109 11126
+type(
+  float -> float ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"music.ml" 304 11109 11127 "music.ml" 304 11109 11130
+type(
+  float
+)
+"music.ml" 304 11109 11123 "music.ml" 304 11109 11130
+type(
+  float ref
+)
+"music.ml" 305 11134 11142 "music.ml" 305 11134 11147
+type(
+  int ref
+)
+ident(
+  def index "music.ml" 306 11160 11168 "music.ml" 310 11284 11320
+)
+"music.ml" 305 11134 11150 "music.ml" 305 11134 11153
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"music.ml" 305 11134 11154 "music.ml" 305 11134 11155
+type(
+  int
+)
+"music.ml" 305 11134 11150 "music.ml" 305 11134 11155
+type(
+  int ref
+)
+"music.ml" 306 11160 11175 "music.ml" 306 11160 11178
+type(
+  float ref
+)
+ident(
+  int_ref sum "music.ml" 304 11109 11117 "music.ml" 304 11109 11120
+)
+"music.ml" 306 11160 11174 "music.ml" 306 11160 11178
+type(
+  float
+)
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"music.ml" 306 11160 11179 "music.ml" 306 11160 11180
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"music.ml" 306 11160 11181 "music.ml" 306 11160 11185
+type(
+  float
+)
+ident(
+  int_ref prob "music.ml" 302 11048 11054 "music.ml" 302 11048 11058
+)
+"music.ml" 306 11160 11174 "music.ml" 306 11160 11185
+type(
+  bool
+)
+"music.ml" 307 11190 11198 "music.ml" 307 11190 11201
+type(
+  float ref
+)
+ident(
+  int_ref sum "music.ml" 304 11109 11117 "music.ml" 304 11109 11120
+)
+"music.ml" 307 11190 11205 "music.ml" 307 11190 11208
+type(
+  float ref
+)
+ident(
+  int_ref sum "music.ml" 304 11109 11117 "music.ml" 304 11109 11120
+)
+"music.ml" 307 11190 11204 "music.ml" 307 11190 11208
+type(
+  float
+)
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"music.ml" 307 11190 11209 "music.ml" 307 11190 11211
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"music.ml" 307 11190 11212 "music.ml" 307 11190 11224
+type(
+  float array
+)
+ident(
+  int_ref current_prob "music.ml" 300 10912 10927 "music.ml" 300 10912 10939
+)
+"music.ml" 307 11190 11227 "music.ml" 307 11190 11232
+type(
+  int ref
+)
+ident(
+  int_ref index "music.ml" 305 11134 11142 "music.ml" 305 11134 11147
+)
+"music.ml" 307 11190 11226 "music.ml" 307 11190 11232
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"music.ml" 307 11190 11212 "music.ml" 307 11190 11233
+type(
+  float
+)
+type(
+  float array -> int -> float
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"music.ml" 307 11190 11204 "music.ml" 307 11190 11233
+type(
+  float
+)
+"music.ml" 307 11190 11198 "music.ml" 307 11190 11233
 type(
   unit
 )
@@ -7982,21 +8078,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"music.ml" 291 10561 10569 "music.ml" 291 10561 10572
+"music.ml" 308 11235 11243 "music.ml" 308 11235 11246
 type(
   int ref
 )
 ident(
-  int_ref ans "music.ml" 286 10411 10419 "music.ml" 286 10411 10422
+  int_ref ans "music.ml" 303 11085 11093 "music.ml" 303 11085 11096
 )
-"music.ml" 291 10561 10576 "music.ml" 291 10561 10581
+"music.ml" 308 11235 11250 "music.ml" 308 11235 11255
 type(
   int ref
 )
 ident(
-  int_ref index "music.ml" 288 10460 10468 "music.ml" 288 10460 10473
+  int_ref index "music.ml" 305 11134 11142 "music.ml" 305 11134 11147
 )
-"music.ml" 291 10561 10575 "music.ml" 291 10561 10581
+"music.ml" 308 11235 11249 "music.ml" 308 11235 11255
 type(
   int
 )
@@ -8006,7 +8102,7 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"music.ml" 291 10561 10569 "music.ml" 291 10561 10581
+"music.ml" 308 11235 11243 "music.ml" 308 11235 11255
 type(
   unit
 )
@@ -8016,21 +8112,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"music.ml" 292 10583 10591 "music.ml" 292 10583 10596
+"music.ml" 309 11257 11265 "music.ml" 309 11257 11270
 type(
   int ref
 )
 ident(
-  int_ref index "music.ml" 288 10460 10468 "music.ml" 288 10460 10473
+  int_ref index "music.ml" 305 11134 11142 "music.ml" 305 11134 11147
 )
-"music.ml" 292 10583 10600 "music.ml" 292 10583 10605
+"music.ml" 309 11257 11274 "music.ml" 309 11257 11279
 type(
   int ref
 )
 ident(
-  int_ref index "music.ml" 288 10460 10468 "music.ml" 288 10460 10473
+  int_ref index "music.ml" 305 11134 11142 "music.ml" 305 11134 11147
 )
-"music.ml" 292 10583 10599 "music.ml" 292 10583 10605
+"music.ml" 309 11257 11273 "music.ml" 309 11257 11279
 type(
   int
 )
@@ -8040,22 +8136,22 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"music.ml" 292 10583 10606 "music.ml" 292 10583 10607
+"music.ml" 309 11257 11280 "music.ml" 309 11257 11281
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"music.ml" 292 10583 10608 "music.ml" 292 10583 10609
+"music.ml" 309 11257 11282 "music.ml" 309 11257 11283
 type(
   int
 )
-"music.ml" 292 10583 10599 "music.ml" 292 10583 10609
+"music.ml" 309 11257 11273 "music.ml" 309 11257 11283
 type(
   int
 )
-"music.ml" 292 10583 10591 "music.ml" 292 10583 10609
+"music.ml" 309 11257 11265 "music.ml" 309 11257 11283
 type(
   unit
 )
@@ -8065,33 +8161,33 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"music.ml" 291 10561 10569 "music.ml" 293 10610 10622
+"music.ml" 308 11235 11243 "music.ml" 310 11284 11296
 type(
   unit
 )
-"music.ml" 290 10516 10524 "music.ml" 293 10610 10622
+"music.ml" 307 11190 11198 "music.ml" 310 11284 11296
 type(
   unit
 )
-"music.ml" 289 10486 10494 "music.ml" 293 10610 10622
+"music.ml" 306 11160 11168 "music.ml" 310 11284 11296
 type(
   unit
 )
-"music.ml" 293 10610 10625 "music.ml" 293 10610 10641
+"music.ml" 310 11284 11299 "music.ml" 310 11284 11315
 type(
   int -> float array
 )
 ident(
-  int_ref next_note_helper "music.ml" 278 9742 9746 "music.ml" 278 9742 9762
+  int_ref next_note_helper "music.ml" 295 10413 10417 "music.ml" 295 10413 10433
 )
-"music.ml" 293 10610 10643 "music.ml" 293 10610 10646
+"music.ml" 310 11284 11317 "music.ml" 310 11284 11320
 type(
   int ref
 )
 ident(
-  int_ref ans "music.ml" 286 10411 10419 "music.ml" 286 10411 10422
+  int_ref ans "music.ml" 303 11085 11093 "music.ml" 303 11085 11096
 )
-"music.ml" 293 10610 10642 "music.ml" 293 10610 10646
+"music.ml" 310 11284 11316 "music.ml" 310 11284 11320
 type(
   int
 )
@@ -8101,45 +8197,138 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"music.ml" 293 10610 10625 "music.ml" 293 10610 10646
-call(
-  tail
+"music.ml" 310 11284 11299 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 306 11160 11168 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 305 11134 11138 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 304 11109 11113 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 303 11085 11089 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 302 11048 11050 "music.ml" 310 11284 11320
+type(
+  float array
+)
+"music.ml" 301 10994 10996 "music.ml" 310 11284 11320
+type(
+  float array
 )
 type(
   float array
 )
-"music.ml" 289 10486 10494 "music.ml" 293 10610 10646
-type(
-  float array
-)
-"music.ml" 288 10460 10464 "music.ml" 293 10610 10646
-type(
-  float array
-)
-"music.ml" 287 10435 10439 "music.ml" 293 10610 10646
-type(
-  float array
-)
-"music.ml" 286 10411 10415 "music.ml" 293 10610 10646
-type(
-  float array
-)
-"music.ml" 285 10374 10376 "music.ml" 293 10610 10646
-type(
-  float array
-)
-"music.ml" 284 10320 10322 "music.ml" 293 10610 10646
-type(
-  float array
-)
-type(
-  float array
-)
-"music.ml" 283 10238 10281 "music.ml" 293 10610 10646
+"music.ml" 300 10912 10955 "music.ml" 310 11284 11320
 type(
   float -> float array
 )
-"music.ml" 283 10238 10252 "music.ml" 293 10610 10646
+"music.ml" 300 10912 10926 "music.ml" 310 11284 11320
 type(
   float array -> float -> float array
+)
+"music.ml" 314 11324 11332 "music.ml" 314 11324 11342
+type(
+  float array -> float array list -> float array list
+)
+ident(
+  def build_song "music.ml" 314 11324 11324 "music.ml" 1 0 -1
+)
+"music.ml" 314 11324 11344 "music.ml" 314 11324 11348
+type(
+  float array
+)
+ident(
+  def note "music.ml" 314 11324 11364 "music.ml" 321 11699 11705
+)
+"music.ml" 314 11324 11365 "music.ml" 314 11324 11369
+type(
+  float array list
+)
+ident(
+  def song "music.ml" 314 11324 11390 "music.ml" 321 11699 11705
+)
+"music.ml" 315 11411 11417 "music.ml" 315 11411 11423
+type(
+  int ref
+)
+ident(
+  def length "music.ml" 316 11436 11438 "music.ml" 321 11699 11705
+)
+"music.ml" 315 11411 11426 "music.ml" 315 11411 11429
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"music.ml" 315 11411 11430 "music.ml" 315 11411 11432
+type(
+  int
+)
+"music.ml" 315 11411 11426 "music.ml" 315 11411 11432
+type(
+  int ref
+)
+"music.ml" 316 11436 11445 "music.ml" 316 11436 11451
+type(
+  int ref
+)
+ident(
+  int_ref length "music.ml" 315 11411 11417 "music.ml" 315 11411 11423
+)
+"music.ml" 316 11436 11444 "music.ml" 316 11436 11451
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"music.ml" 316 11436 11452 "music.ml" 316 11436 11453
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"music.ml" 316 11436 11454 "music.ml" 316 11436 11455
+type(
+  int
+)
+"music.ml" 316 11436 11444 "music.ml" 316 11436 11455
+type(
+  bool
+)
+"music.ml" 318 11538 11544 "music.ml" 318 11538 11548
+type(
+  '_a
+)
+ident(
+  def prob "music.ml" 319 11605 11607 "music.ml" 320 11658 11698
+)
+"music.ml" 318 11538 11551 "music.ml" 318 11538 11573
+type(
+  float array array -> float array -> float array
+)
+ident(
+  ext_ref Matrix.Mus_matrix.vector_mult
+)
+"music.ml" 318 11538 11597 "music.ml" 318 11538 11601
+type(
+  float array
+)
+ident(
+  int_ref note "music.ml" 314 11324 11344 "music.ml" 314 11324 11348
 )

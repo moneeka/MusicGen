@@ -293,7 +293,7 @@ let rec note_counter (notes_list : int list) : float array array =
     | hd1::hd2::tl -> increment_matrix_val hd1 hd2; note_counter (hd2::tl)             
 
 let next_note_helper (index : int) : float array = 
-    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
         new_array.(index) <- 1.; new_array
 
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
