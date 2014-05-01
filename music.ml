@@ -309,8 +309,6 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
         index:= !index + 1
         done ; next_note_helper !ans
 
-
-
 let rec build_song (note : float array) (song : float array list) : float array list =
   let length = ref 50 in
   while !length > 0 do
@@ -321,7 +319,40 @@ let rec build_song (note : float array) (song : float array list) : float array 
   done 
  
 
+(** float array list **)
+let rec list_to_stream (lst : obj list) : event stream =
+  let rec list_to_stream_rec (nlst : obj list) : event stream =
+    match nlst with
+    | [] -> list_to_stream lst
+    | Note(p,d,v) :: tl ->
+       fun () -> Cons(Tone(0.,p,v),
+                      fun () -> Cons(Stop(d,p), list_to_stream_rec tl))
+    | Rest(d) :: tl -> shift_start d (list_to_stream_rec tl)
+  in list_to_stream_rec lst
 
+(* standard volume *)
+let v = 12
+
+let rec find_one (vector : float array) : int = 
+    let ans =  ref 0 in
+        for i = 0 to 12 do 
+            if vector.(i) = 1.0 then ans:= i else ()
+        done; !ans
+
+let rec list_to_stream (notes : float array list) (lengths : float array list) : event stream =
+  let rec list_to_stream_rec (nlist : float array list) (llist : float array list) : event stream =
+    match nlist, llist with
+    | [], [] -> list_to_stream notes lengths
+    | hd1 :: tl1, hd2 :: tl2 ->
+       let p = find_one hd1 in
+       let d = find_one hd2 in
+       if p = 12
+       then shift_start d (list_to_stream_rec tl1 tl2)
+       else
+       (fun () -> Cons(Tone(0., p, v),
+		      fun () -> Cons(Stop(d, p), list_to_stream_rec tl1 tl2)))
+       
+       
 
 
 
