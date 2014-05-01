@@ -180,20 +180,7 @@ let rec listprint (lst: string list) : string =
     |[] -> ""
     |hd::tl -> hd ^  " " ^ (listprint tl)
 
-let userinput = ref ""
-(* prompts for user input *)
-(** instead of returning unit... maybe store the input and return it as a string so it can be used later? **)
-let prompt () : string  = 
-     let words = "Please pick an emotion from this list" ^ " " ^ listprint emotions ^ ":" in 
-     let line =  print_string words in
-     let input = read_line line in
-        if (member (String.lowercase input) emotions) then 
-	  print_string "Your song is being generated...!"; 
-          userinput:= input; !userinput           
-        (*else 
-            let () = print_string "Please try again : Not a valid emotion" in 
-            let () = print_newline () in  
-            print_newline ();;*)
+let userinput = ref "upbeat"
 
 (** Generates Probability Matrices **)
 (* converts p list to int list *)            
@@ -222,7 +209,7 @@ let increment_matrix_val (matrix : float array array) (row : int) (col : int) : 
 (* reads int lists and increments matrix, creating probability matrix *)
 let rec note_counter (vals_list : int list) (matrix : float array array) : float array array =
     match vals_list with
-    | [] -> raise (Failure "No values recieved.")
+    | [] -> matrix
     | [hd] -> matrix
     | hd1::hd2::tl -> increment_matrix_val matrix hd1 hd2; note_counter (hd2::tl) matrix
 
@@ -252,9 +239,15 @@ let next_note_helper (index : int) : float array =
     let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
         new_array.(index) <- 1.; new_array
 
+let sum_val (sum_of_rows : float) : int =
+  let sum = Float.to_int sum_of_rows in
+  if sum = 0 then 0
+  else sum
+
+
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
 let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
-  let rand = Random.int (Float.to_int sum_of_rows) in
+  let rand = sum_val sum_of_rows in
   let prob = (Int.to_float rand) in 
     let ans = ref 0 in 
     let sum = ref 0.0 in
@@ -326,6 +319,20 @@ let output : unit =
   list_to_stream notes lengths) in  
  let filename = "gen" ^ !userinput ^ ".mid" in 
  output_midi filename 176 stream
+
+(* prompts for user input *)
+(** instead of returning unit... maybe store the input and return it as a string so it can be used later? **)
+let prompt () : string  = 
+     let words = "Please pick an emotion from this list" ^ " " ^ listprint emotions ^ ":" in 
+     let line =  print_string words in
+     let input = read_line line in
+        if (member (String.lowercase input) emotions) then 
+	  print_string "Your song is being generated...!"; 
+          userinput:= input; !userinput           
+        (*else 
+            let () = print_string "Please try again : Not a valid emotion" in 
+            let () = print_newline () in  
+            print_newline ();;*)
 
 (*
 (*>* Problem 3.1 *>*)
