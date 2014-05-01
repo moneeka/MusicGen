@@ -188,7 +188,8 @@ let prompt () : string  =
      let line =  print_string words in
      let input = read_line line in
         if (member (String.lowercase input) emotions) then 
-        print_string "Your song is being generated...!"; input;;            
+	  print_string "Your song is being generated...!"; 
+          userinput:= input; !userinput           
         (*else 
             let () = print_string "Please try again : Not a valid emotion" in 
             let () = print_newline () in  
@@ -234,7 +235,7 @@ let rec notes_probability (input : string) (song_list : song list) : float array
        (if hd.emotion = input
 	then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl)
 	else notes_list input tl))
-  in note_counter (notes_list input song_list) notes_matrix 
+  in note_counter (notes_list !userinput songs) notes_matrix 
 
 (* creates probability matrix for lengths *)
 let rec lengths_probability (input : string) (song_list : song list) : float array array =
@@ -245,7 +246,7 @@ let rec lengths_probability (input : string) (song_list : song list) : float arr
 	(if hd.emotion = input
 	 then (convert_lengthlist_to_intlist hd.lengths []) @ (lengths_list input tl)
 	 else lengths_list input tl))
-  in note_counter (lengths_list input song_list) lengths_matrix
+  in note_counter (lengths_list !userinput songs) lengths_matrix
 
 let next_note_helper (index : int) : float array = 
     let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
@@ -265,7 +266,7 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
         done ; next_note_helper !ans
 
 let rec build_notes (n : int) (initial_note : float array) (song : float array list) : float array list =
-  let probability_matrix = notes_probability "upbeat" songs in
+  let probability_matrix = notes_probability !userinput songs in
   match n with
   | 0 -> List.rev song
   | x ->
@@ -284,7 +285,7 @@ let rec build_notes (initial_note : float array) (song : float array list) : flo
   done 
  *) 
 let rec build_lengths (n : int) (initial_length : float array) (song : float array list) : float array list =
-  let probability_matrix = lengths_probability "upbeat" songs in
+  let probability_matrix = lengths_probability !userinput songs in
   match n with
   | 0 -> List.rev song
   | x ->
@@ -323,7 +324,7 @@ let output : unit =
   (let notes = build_notes 50 (initial_note ()) [] in
   let lengths = build_lengths 50 (initial_note ()) [] in
   list_to_stream notes lengths) in  
- let filename = "gen" ^ "fdajfdklasj" ^ ".mid" in 
+ let filename = "gen" ^ !userinput ^ ".mid" in 
  output_midi filename 176 stream
 
 (*

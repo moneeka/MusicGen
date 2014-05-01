@@ -47,10 +47,10 @@ module Mus_matrix : MUS_MATRIX =
        done
      
      let vector_mult mat vet : float array = 
-          (* vector_change mat vet;
+          vector_change mat vet;
             for i = 0 to 12 do
             vet.(i) <- sum_row mat i
-            done;*) vet
+            done; vet
        
         
     end 
