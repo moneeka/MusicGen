@@ -39,18 +39,18 @@ module Mus_matrix : MUS_MATRIX =
             let r = mat.(row) in
             Array.map (fun _ -> value /. sum) r
      
-     let vector_change mat vet =  
+     let vector_change mat vet : unit =  
         for i = 0 to 12 do
         for j = 0 to 12 do
        mat.(i).(j) <- mat.(i).(j) *. vet.(j)
        done
        done
      
-     let vector_mult mat vet = 
-            vector_change mat vet;
+     let vector_mult mat vet : float array = 
+          (* vector_change mat vet;
             for i = 0 to 12 do
             vet.(i) <- sum_row mat i
-            done; vet
+            done;*) vet
        
         
     end 

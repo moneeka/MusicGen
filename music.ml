@@ -263,25 +263,33 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
         index:= !index + 1
         done ; next_note_helper !ans
 
+let rec build_notes (n : int) (initial_note : float array) (song : float array list) : float array list =
+  let probability_matrix = notes_probability "upbeat" songs in
+  match n with
+  | 0 -> List.rev song
+  | x ->
+     (let prob = Mus_matrix.vector_mult probability_matrix initial_note in
+      let new_note = next_note prob (Mus_matrix.sum_vector prob) in
+      build_notes (n - 1) new_note (initial_note :: song))
+(*
 let rec build_notes (initial_note : float array) (song : float array list) : float array list =
   let length = ref 50 in
-  let probability_matrix = notes_probability (prompt ()) songs in
+  let probability_matrix = notes_probability "upbeat" songs in
   while !length > 0 do
   (* prob is a float array that contains the probabilities of the next note *)
   let prob = Mus_matrix.vector_mult probability_matrix initial_note in
-  slet new_note = next_note prob (Mus_matrix.sum_vector prob) in
-  length := (!length - 1); song @ [new_note]
-  done 
-
-let rec build_lengths (initial_length : float array) (song : float array list) : float array list =
-  let length = ref 50 in
-  let probability_matrix = lengths_probability input songs in
-  while !length > 0 do
-  (* prob is a float array that contains the probabilities of the next note *)
-  let prob = Mus_matrix.vector_mult probability_matrix initial_length in
   let new_note = next_note prob (Mus_matrix.sum_vector prob) in
-  length := !length - 1; song @ [new_note]
+  length := (!length - 1); List.rev (new_note :: song)
   done 
+ *) 
+let rec build_lengths (n : int) (initial_length : float array) (song : float array list) : float array list =
+  let probability_matrix = lengths_probability "upbeat" songs in
+  match n with
+  | 0 -> List.rev song
+  | x ->
+     (let prob = Mus_matrix.vector_mult probability_matrix initial_length in
+      let new_length = next_note prob (Mus_matrix.sum_vector prob) in
+      build_lengths (n - 1) new_length (initial_length :: song))
 
 (** converts float array list of notes to an event stream **)
 let rec find_one (vector : float array) : int = 
@@ -311,10 +319,10 @@ let initial_note () : float array =
 
 let output : unit =
  let stream =
-  (let notes = build_notes (initial_note ()) [] in
-  let lengths = build_lengths (initial_note ()) [] in
+  (let notes = build_notes 50 (initial_note ()) [] in
+  let lengths = build_lengths 50 (initial_note ()) [] in
   list_to_stream notes lengths) in  
- let filename = "gen" ^ input ^ ".mid" in 
+ let filename = "gen" ^ "fdajfdklasj" ^ ".mid" in 
  output_midi filename 176 stream
 
 (*
