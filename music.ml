@@ -180,6 +180,7 @@ let rec listprint (lst: string list) : string =
     |[] -> ""
     |hd::tl -> hd ^  " " ^ (listprint tl)
 
+let userinput = ref ""
 (* prompts for user input *)
 (** instead of returning unit... maybe store the input and return it as a string so it can be used later? **)
 let prompt () : string  = 
