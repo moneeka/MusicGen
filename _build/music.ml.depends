@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-music.ml: Array Core Float Int List Mus_matrix Out_channel Printf Random String
-=======
-music.ml:
->>>>>>> a3d44dfd6a49d490c2f6392435a65a331d9b3e01
+music.ml: Array Core Float Int List Matrix Mus_matrix Out_channel Printf Random String
