@@ -14,10 +14,12 @@ type obj = Note of pitch * float * int | Rest of float
 
 let p_to_int p =
   match p with | C -> 0 | Db -> 1 | D -> 2 | Eb -> 3 | E -> 4 | F -> 5
-    | Gb -> 6 | G -> 7 | Ab -> 8 | A -> 9 | Bb -> 10 | B -> 11
+    | Gb -> 6 | G -> 7 | Ab -> 8 | A -> 9 | Bb -> 10 | B -> 11 | REST -> 12
 
-(*let int_to_t n =
-  match t with | 0 -> |...*)
+let length_to_int n =
+  match n with | 0.0625 -> 0 | 0.125 -> 1 | 0.25 -> 2 | 0.3125 -> 3 
+    | 0.375 -> 4 | 0.5 -> 5 | 0.625 -> 6 | 0.75 -> 7 | 0.875 -> 8 
+    | 1.0 -> 9 | 1.25 -> 10 | 1.5 -> 11 | 1.75 -> 12 
 
 let int_to_p n =
   if (n < 0) || (n > 11) then raise InvalidPitch else
@@ -278,22 +280,29 @@ let prompt : unit  =
 let rec convert_plist_to_intlist (notes : 'a list) (intlist : int list) : int list=
      match notes with
      |[] -> List.rev intlist
-     |hd::tl-> convert_plist_to_intlist tl ((p_to_int hd)::intlist)          
+     |hd::tl-> convert_plist_to_intlist tl ((p_to_int hd)::intlist)      
+
+let rec convert_lengthlist_to_intlist (lengths : 'a list) (intlist : int list) : int list=
+     match lengths with
+     |[] -> List.rev intlist
+     |hd::tl-> convert_lengthlist_to_intlist tl ((length_to_int hd)::intlist)          
             
-let main_matrix = Mus_matrix.music_matrix
+let notes_matrix = Mus_matrix.music_matrix
 
-let increment_matrix_val (row:int) (col:int) : unit =
-    let n = main_matrix.(row).(col) in
-    main_matrix.(row).(col) <- n +. 1.
+let lengths_matrix = Mus_matrix.music_matrix
 
-let rec note_counter (notes_list : int list) : float array array =
-    match notes_list with
-    | [] -> raise (Failure "No notes recieved.")
-    | [hd] -> main_matrix
-    | hd1::hd2::tl -> increment_matrix_val hd1 hd2; note_counter (hd2::tl)             
+let increment_matrix_val (matrix) (row:int) (col:int) : unit =
+    let n = matrix.(row).(col) in
+    matrix.(row).(col) <- n +. 1.
+
+let rec note_counter (vals_list : int list) (matrix) : float array array =
+    match vals_list with
+    | [] -> raise (Failure "No values recieved.")
+    | [hd] -> matrix
+    | hd1::hd2::tl -> increment_matrix_val matrix hd1 hd2; note_counter (hd2::tl) matrix             
 
 let next_note_helper (index : int) : float array = 
-    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
         new_array.(index) <- 1.; new_array
 
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
@@ -316,7 +325,7 @@ let rec build_song (note : float array) (song : float array list) : float array 
   while !length > 0 do
   (* prob is a float array that contains the probabilities of the next note *)
   let prob = Mus_matrix.vector_mult (*probability matrix*) note in
-  let new_note = next_note prob (sum_vector prob) in
+  let new_note = next_note prob (Mus_matrix.sum_vector prob) in
   length := !length - 1; song @ new_note
   done 
  

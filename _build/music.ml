@@ -274,9 +274,26 @@ let prompt : unit  =
             let () = print_string "Please try again : Not a valid emotion" in 
             let () = print_newline () in  
             print_newline ()
+            
+let rec convert_plist_to_intlist (notes : 'a list) (intlist : int list) : int list=
+     match notes with
+     |[] -> List.rev intlist
+     |hd::tl-> convert_plist_to_intlist tl ((p_to_int hd)::intlist)          
+            
+let main_matrix = Mus_matrix.music_matrix
+
+let increment_matrix_val (row:int) (col:int) : unit =
+    let n = main_matrix.(row).(col) in
+    main_matrix.(row).(col) <- n +. 1.
+
+let rec note_counter (notes_list : int list) : float array array =
+    match notes_list with
+    | [] -> raise (Failure "No notes recieved.")
+    | [hd] -> main_matrix
+    | hd1::hd2::tl -> increment_matrix_val hd1 hd2; note_counter (hd2::tl)             
 
 let next_note_helper (index : int) : float array = 
-    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
+    let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
         new_array.(index) <- 1.; new_array
 
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
@@ -293,7 +310,7 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
         done ; next_note_helper !ans
 
 
-(*
+
 let rec build_song (note : float array) (song : float array list) : float array list =
   let length = ref 50 in
   while !length > 0 do
@@ -302,13 +319,13 @@ let rec build_song (note : float array) (song : float array list) : float array 
   let new_note = next_note prob (sum_vector prob) in
   length := !length - 1; song @ new_note
   done 
- *)
+ 
 
 
 
 
 
-
+																										    
 
 (* take in current note (a float array)
 generate next note (multiply note by matrix to generate probabilities, then use next_note)
@@ -317,4 +334,5 @@ substract length of note from thirty
 then run the function on the next note
 returns the list
 prompts for user input *)
+
 
