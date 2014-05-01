@@ -318,8 +318,6 @@ let next_note (current_prob : float array) (sum_of_rows : float) : float array =
         index:= !index + 1
         done ; next_note_helper !ans
 
-
-
 let rec build_song (note : float array) (song : float array list) : float array list =
   let length = ref 50 in
   while !length > 0 do
