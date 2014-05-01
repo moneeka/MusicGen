@@ -1,5 +1,5 @@
 open Core.Std
-open Mus_matrix
+open Matrix
 
 exception InvalidHex
 exception InvalidPitch
@@ -70,6 +70,35 @@ let rec map (f: 'a -> 'b) (s: 'a stream) : 'b stream =
   fun () -> Cons(f (head s), map f (tail s))
 ;;
 
+(******* Music code ********)
+let shift (by : float) (e : event) =
+  match e with
+    | Tone (time, pit, vol) -> Tone (time +. by, pit, vol)
+    | Stop (time, pit) -> Stop (time +. by, pit)
+
+let shift_start (by : float) (str : event stream) =
+  let Cons (e, t) = str () in
+    fun () -> Cons(shift by e, t)
+
+let p_to_int p =
+  match p with | C -> 0 | Db -> 1 | D -> 2 | Eb -> 3 | E -> 4 | F -> 5
+    | Gb -> 6 | G -> 7 | Ab -> 8 | A -> 9 | Bb -> 10 | B -> 11 | REST -> 12
+
+let length_to_int n =
+  match n with | 0.0625 -> 0 | 0.125 -> 1 | 0.25 -> 2 | 0.3125 -> 3 
+    | 0.375 -> 4 | 0.5 -> 5 | 0.625 -> 6 | 0.75 -> 7 | 0.875 -> 8 
+    | 1.0 -> 9 | 1.25 -> 10 | 1.5 -> 11 | 1.75 -> 12 
+
+let int_to_p n =
+  if (n < 0) || (n > 12) then raise InvalidPitch else
+    let pitches = [C;Db;D;Eb;E;F;Gb;G;Ab;A;Bb;B;REST] in
+  List.nth_exn pitches n
+
+let int_to_length n =
+  if (n < 0) || (n > 12) then raise InvalidPitch else
+    let lengths = [0.0625;0.125;0.25;0.3125;0.375;0.5;0.625;0.75;0.875;1.0;1.25;1.5;1.75] in
+  List.nth_exn lengths n
+
 (***** MIDI Output Code *****)
 let hex_to_int hex = int_of_string ("0x"^hex)
 
@@ -138,35 +167,6 @@ let output_midi filename n str =
   flush outchan;
   Out_channel.close outchan
 
-(******* Music code ********)
-let shift (by : float) (e : event) =
-  match e with
-    | Tone (time, pit, vol) -> Tone (time +. by, pit, vol)
-    | Stop (time, pit) -> Stop (time +. by, pit)
-
-let shift_start (by : float) (str : event stream) =
-  let Cons (e, t) = str () in
-    fun () -> Cons(shift by e, t)
-
-let p_to_int p =
-  match p with | C -> 0 | Db -> 1 | D -> 2 | Eb -> 3 | E -> 4 | F -> 5
-    | Gb -> 6 | G -> 7 | Ab -> 8 | A -> 9 | Bb -> 10 | B -> 11 | REST -> 12
-
-let length_to_int n =
-  match n with | 0.0625 -> 0 | 0.125 -> 1 | 0.25 -> 2 | 0.3125 -> 3 
-    | 0.375 -> 4 | 0.5 -> 5 | 0.625 -> 6 | 0.75 -> 7 | 0.875 -> 8 
-    | 1.0 -> 9 | 1.25 -> 10 | 1.5 -> 11 | 1.75 -> 12 
-
-let int_to_p n =
-  if (n < 0) || (n > 12) then raise InvalidPitch else
-    let pitches = [C;Db;D;Eb;E;F;Gb;G;Ab;A;Bb;B;REST] in
-  List.nth_exn pitches n
-
-let int_to_length n =
-  if (n < 0) || (n > 12) then raise InvalidPitch else
-    let lengths = [0.0625;0.125;0.25;0.3125;0.375;0.5;0.625;0.75;0.875;1.0;1.25;1.5;1.75] in
-  List.nth_exn lengths n
-
 (** User Input **)
 (* returns true if key is an element in a string list *)
 let rec member (key : string) (lst : string list) : bool = 
@@ -187,11 +187,11 @@ let prompt () : string  =
      let line =  print_string words in
      let input = read_line line in
         if (member (String.lowercase input) emotions) then 
-        print_string "Your song is being generated...!"; input            
-        else 
+        print_string "Your song is being generated...!"; input;;            
+        (*else 
             let () = print_string "Please try again : Not a valid emotion" in 
             let () = print_newline () in  
-            print_newline ()
+            print_newline ();;*)
 
 (** Generates Probability Matrices **)
 (* converts p list to int list *)            
@@ -226,25 +226,25 @@ let rec note_counter (vals_list : int list) (matrix : float array array) : float
 
 (* creates probability matrix for notes *)
 let rec notes_probability (input : string) (song_list : song list) : float array array =
-  let notes_list =
+  let rec notes_list (input : string) (song_list : song list) : int list =
     (match song_list with
     | [] -> []
     | hd :: tl ->
        (if hd.emotion = input
-	then (convert_plist_to_intlist hd.pitches []) @ (notes_probability tl)
-	else notes_probability tl))
-  in note_counter notes_list notes_matrix 
+	then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl)
+	else notes_list input tl))
+  in note_counter (notes_list input song_list) notes_matrix 
 
 (* creates probability matrix for lengths *)
 let rec lengths_probability (input : string) (song_list : song list) : float array array =
-  let lengths_list =
+  let rec lengths_list (input : string) (song_list : song list) : int list =
     (match song_list with
      | [] -> []
      | hd :: tl ->
 	(if hd.emotion = input
-	 then (convert_lengthlist_to_intlist hd.lengths []) @ (lengths_probability tl)
-	 else lengths_probability tl))
-  in note_counter lengths_list lengths_matrix
+	 then (convert_lengthlist_to_intlist hd.lengths []) @ (lengths_list input tl)
+	 else lengths_list input tl))
+  in note_counter (lengths_list input song_list) lengths_matrix
 
 let next_note_helper (index : int) : float array = 
     let new_array = [|0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.;0.|] in
@@ -269,8 +269,8 @@ let rec build_notes (initial_note : float array) (song : float array list) : flo
   while !length > 0 do
   (* prob is a float array that contains the probabilities of the next note *)
   let prob = Mus_matrix.vector_mult probability_matrix initial_note in
-  let new_note = next_note prob (Mus_matrix.sum_vector prob) in
-  length := !length - 1; song @ new_note
+  slet new_note = next_note prob (Mus_matrix.sum_vector prob) in
+  length := (!length - 1); song @ [new_note]
   done 
 
 let rec build_lengths (initial_length : float array) (song : float array list) : float array list =
@@ -280,7 +280,7 @@ let rec build_lengths (initial_length : float array) (song : float array list) :
   (* prob is a float array that contains the probabilities of the next note *)
   let prob = Mus_matrix.vector_mult probability_matrix initial_length in
   let new_note = next_note prob (Mus_matrix.sum_vector prob) in
-  length := !length - 1; song @ new_note
+  length := !length - 1; song @ [new_note]
   done 
 
 (** converts float array list of notes to an event stream **)
