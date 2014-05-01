@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "Rule: ocaml: ml -> cmo & cmi (%=refs )": "\1709\250\140\181\188\167$\2363; _\159\022\143"
 "Rule: ocaml: cmx* & o* -> native (%=read )": "\007\171m\243+V\150\159\174\155\159f\168Z\159\029"
 "Rule: ocaml: cmx* & o* -> native (%=music )": "x'\192J;\029V\166:\031X\171\144\178\147\182"
@@ -25,3 +26,13 @@
 "Rule: ocaml: ml -> cmo & cmi (%=matrix )": "n#l\196\175@\246\151\2322\234\029&\138\230\223"
 "Resource: /home/jharvard/aboss-psets51/6/refs.ml": "\217F\245\214\196$3\n\252j2h\2505\169\147"
 "Rule: ocaml: cmx* & o* -> native (%=refs )": ")\213\255`\182\211<\180\230\208E>6\025\212E"
+=======
+"Rule: ocaml: ml -> cmo & cmi (%=Mus_matrix )": "X!Q\227\004!\138\129\237D\255M0\220\196n"
+"Rule: ocaml dependencies ml (%=music )": ":EqU\154\216\02196\246\242\131\199\242\021o"
+"Resource: /home/jharvard/MusicGen/Mus_matrix.ml": "5\158@\250A\250\185\2137\239\247\191\233bT\252"
+"Resource: /home/jharvard/MusicGen/matrix.ml": "5\158@\250A\250\185\2137\239\247\191\233bT\252"
+"Rule: ocaml dependencies ml (%=matrix )": "ed\143\239\007\224gB\012\200\016\147Mk\198;"
+"Resource: /home/jharvard/MusicGen/music.ml": "\031\1787\166\tGFf\004\168\000\132(\134v\181"
+"Rule: ocaml dependencies ml (%=Mus_matrix )": "\189\127\252\245RM7\027t\128\1358yb?\225"
+"Rule: ocaml: ml -> cmo & cmi (%=matrix )": "\t\209\196\212)\162C\1303<\201\197=\167rO"
+>>>>>>> a3d44dfd6a49d490c2f6392435a65a331d9b3e01
