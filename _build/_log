@@ -1,21 +1,10 @@
 ### Starting build.
 # Target: music.ml.depends, tags: { annot, bin_annot, debug, extension:ml, file:music.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
 ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules music.ml > music.ml.depends
-# Target: matrix.ml.depends, tags: { annot, bin_annot, debug, extension:ml, file:matrix.ml, ocaml, ocamldep, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
-ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -modules matrix.ml > matrix.ml.depends
-# Target: matrix.cmo, tags: { annot, bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:matrix.cmo, file:matrix.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
-ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o matrix.cmo matrix.ml
-+ ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o matrix.cmo matrix.ml
-File "matrix.ml", line 17, characters 23-40:
-Warning 6: labels were omitted in the application of this function.
-File "matrix.ml", line 40, characters 12-21:
-Warning 6: labels were omitted in the application of this function.
 # Target: music.cmo, tags: { annot, bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:music.cmo, file:music.ml, implem, ocaml, package(bin_prot.syntax), package(core), package(sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax), quiet, short_paths, syntax(camlp4o), thread }
 ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o music.cmo music.ml
 + ocamlfind ocamlc -c -w A-4-33-40-41-42-43-34-44 -strict-sequence -g -annot -bin-annot -short-paths -thread -syntax camlp4o -package bin_prot.syntax -package sexplib.syntax,comparelib.syntax,fieldslib.syntax,variantslib.syntax -package core -o music.cmo music.ml
-File "music.ml", line 318, characters 59-63:
-Error: This expression has type float array
-       but an expression was expected of type float array array
-       Type float is not compatible with type float array 
+File "music.ml", line 2, characters 0-15:
+Error: Unbound module Mus_matrix
 Command exited with code 2.
 # Compilation unsuccessful.

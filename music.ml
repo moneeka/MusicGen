@@ -187,7 +187,7 @@ let prompt () : string  =
      let line =  print_string words in
      let input = read_line line in
         if (member (String.lowercase input) emotions) then 
-        print_string "Your song is being generated...!"; input            
+        print_string "Your song is being generated...!"            
         else 
             let () = print_string "Please try again : Not a valid emotion" in 
             let () = print_newline () in  
