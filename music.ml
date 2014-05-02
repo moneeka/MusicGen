@@ -5,8 +5,8 @@ exception InvalidHex
 exception InvalidPitch
 
 (** Type definitions and Constants **)
-(* emotions arrays accounting for both upper and lowercase *)
-let emotions = ["sad"; "upbeat1"]
+(* emotions arrays case senstive*)
+let emotions = ["sad"; "upbeat"; "relaxed"]
 
 (* standard volume *)
 let v = 12
@@ -39,25 +39,32 @@ let fur_elise = { emotion = "sad";
 pitches = [E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; Ab; B; C; REST; E; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; C; B; A; REST; B; C; D; E; G; F; E; D; F; E; D; C; E; D; C; B; REST; E; E; REST; E; E; REST; Eb; E; REST; Eb; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; Ab; B; C; REST; E; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; C; B; A];
 lengths = [0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.50] }
 		
-let ode_to_joy = { emotion = "upbeat1";
+let ode_to_joy = { emotion = "upbeat";
 pitches = [E; E; F; G; G; F ; E; D; C; C; D; E; E; D; D; E; E; F; G; G; F; E; D; C; C; D; E; D; C; C; D; D; E; C; D; E; F; E; C; D; E; F; E; D; C; D; REST; E; E; F; G; G; F; E; D; C; C; D; E; D; C; C]; 
 lengths = [0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.125; 0.125; 0.25; 0.25; 0.25; 0.125; 0.125; 0.25; 0.25; 0.25; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5] }
- 
-(*let sonata = { emotion = "upbeat";
-pitches = [C; E; G; B; C; D; C; REST; A; G; C; G; F; E; F; E; REST];
-lengths = [0.5; 0.25; 0.25; 0.375; 0.0625; 0.0625; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.125; 0.0625; 0.0625; 0.25] } *)
 
- 
-let sonata = { emotion = "upbeat1";
+let sonata = { emotion = "upbeat";
 pitches = [A; B; C; D; E; F; G; Gb; A; Ab; Eb; Db; E; B; REST; E; B; D; F; Gb; A; C; Db; B; Db; D; E; E; E; B; D; Ab];
 lengths = [0.5; 0.25; 0.25; 0.375; 0.0625; 0.0625; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.125; 0.0625; 0.0625; 0.25] }
 
-let entertainer = { emotion = "upbeat1";
+let entertainer = { emotion = "upbeat";
 pitches = [D; Eb; E; C; E; C; E; C; REST; C; D; Eb; E; C; D; E; B; D; C; REST; D; Eb; E; C; E; C; E; C; REST; C; D; Eb; E; C; D; E; B; D; C; REST; A; G; Gb; A; C; E; D; C; A; D];
 lengths = [0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.0625; 0.3125; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.25; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.0625; 0.3125; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.0625; 0.0625; 0.25] }
 
+let clair_de_lune ={ emotion = "relaxed";
+pitches = [REST; Ab; Ab; F; Eb; F; Eb; Db; Eb; Db; F; Db; C; Db; C; Bb; C; Bb; Eb; Bb; Ab; Bb; Ab; Gb; Ab; Gb; F; F; Gb; F; Bb; F; Eb; F; Eb; Db; Eb; Db; C];
+lengths = [0.125; 0.125; 0.5; 0.5; 0.125; 0.125; 0.875; 0.125; 0.125; 0.125; 0.375; 0.3125; 0.125; 0.125; 0.875; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.375; 0.5; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.375; 0.375] }
+
+let reverie = { emotion = "relaxed";
+pitches = [G; D; E; F; G; E; F; E; C; E; D; Bb; D; E; F; C; G; A; A; E; C; E; D; Bb; G; A; E; C; E; D; Bb; G; G; D; Bb; D; C; A; G; A; G; A; F; D; F; D; C];
+lengths = [0.5; 0.75; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 1.0; 0.25; 0.25; 0.25; 0.25; 1.0; 0.5; 1.0; 0.5; 0.75; 0.125; 0.125; 0.25; 0.125; 0.125; 0.5; 0.75; 0.125; 0.125; 0.25; 0.125; 0.125; 0.5; 0.75; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.5; 0.5] }
+
+let arabesque = { emotion = "relaxed";
+pitches = [Db; E; A; Db; E; Gb; Ab; Eb; B; Ab; Eb; B; A; Db; Gb; A; Db; Eb; E; B; Ab; E; B; Ab; Gb; A; Db; Db; Gb; Db; Db; Gb; A; A; Ab; Gb; E];
+lengths = [0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.25; 0.5; 0.25; 0.25; 0.5; 0.625; 0.125; 0.125; 0.5] }
+
 (* list containing the songs *)
-let songs = [gymnopedie; swan_lake; fur_elise; ode_to_joy; sonata; entertainer]
+let songs = [gymnopedie; swan_lake; fur_elise; ode_to_joy; sonata; entertainer; clair_de_lune; reverie; arabesque]
 
 (***** Streams Code *****)
 type 'a stream = unit -> 'a str
@@ -249,7 +256,6 @@ let sum_val (sum_of_rows : float) : int =
   let sum = Float.to_int sum_of_rows in
   if sum = 0 then 0
   else sum
-
 
 (*This function takes in the current probability vector (which has already been multiplied with the probability matrix) and the sum of the row to return the next probability vector. We will generate a random integer from 0 to the number of instances in the row (aka sum of row) and then use that number to determine the next vector.  *)
 let next_note (current_prob : float array) (sum_of_rows : float) : float array = 
