@@ -6,7 +6,7 @@ exception InvalidPitch
 
 (** Type definitions and Constants **)
 (* emotions arrays case senstive*)
-let emotions = ["sad"; "upbeat"; "relaxed"]
+let emotions = ["sad"; "upbeat"; "relaxed"; "capricious"]
 
 (* standard volume *)
 let v = 12
@@ -228,24 +228,38 @@ let rec note_counter (vals_list : int list) (matrix : float array array) : float
 (* creates probability matrix for notes *)
 let rec notes_probability (input : string) (song_list : song list) : float array array =
   let rec notes_list (input : string) (song_list : song list) : int list =
-    (match song_list with
-    | [] -> []
-    | hd :: tl ->
-       (if hd.emotion = input
-	then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl) 
-	else notes_list input tl))
+    if input = "capricious"
+    then
+      (match song_list with
+       | [] -> []
+       | hd :: tl ->
+	  (convert_plist_to_intlist hd.pitches [] @ (notes_list input tl)))
+    else 
+      (match song_list with
+       | [] -> []
+       | hd :: tl ->
+	  (if hd.emotion = input
+	   then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl) 
+	   else notes_list input tl))
   in note_counter (notes_list !userinput songs) notes_matrix 
 
 
 (* creates probability matrix for lengths *)
 let rec lengths_probability (input : string) (song_list : song list) : float array array =
   let rec lengths_list (input : string) (song_list : song list) : int list =
-    (match song_list with
-     | [] -> []
-     | hd :: tl ->
-	(if hd.emotion = input
-	 then (convert_lengthlist_to_intlist hd.lengths []) @ (lengths_list input tl)
-	 else lengths_list input tl))
+    if input = "capricious"
+    then
+      (match song_list with
+       | [] -> []
+       | hd :: tl ->
+	  (convert_plist_to_intlist hd.pitches [] @ (lengths_list input tl)))
+    else
+      (match song_list with
+       | [] -> []
+       | hd :: tl ->
+	  (if hd.emotion = input
+	   then (convert_lengthlist_to_intlist hd.lengths []) @ (lengths_list input tl)
+	   else lengths_list input tl))
   in note_counter (lengths_list !userinput songs) lengths_matrix
 
 let next_note_helper (index : int) : float array = 
