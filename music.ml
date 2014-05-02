@@ -6,7 +6,7 @@ exception InvalidPitch
 
 (** Type definitions and Constants **)
 (* emotions arrays accounting for both upper and lowercase *)
-let emotions = ["sad"; "upbeat"]
+let emotions = ["sad"; "upbeat1"]
 
 (* standard volume *)
 let v = 12
@@ -39,15 +39,20 @@ let fur_elise = { emotion = "sad";
 pitches = [E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; Ab; B; C; REST; E; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; C; B; A; REST; B; C; D; E; G; F; E; D; F; E; D; C; E; D; C; B; REST; E; E; REST; E; E; REST; Eb; E; REST; Eb; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; Ab; B; C; REST; E; E; Eb; E; Eb; E; B; D; C; A; REST; C; E; A; B; REST; E; C; B; A];
 lengths = [0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.375; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.25; 0.125; 0.125; 0.125; 0.125; 0.50] }
 		
-let ode_to_joy = { emotion = "upbeat";
+let ode_to_joy = { emotion = "upbeat1";
 pitches = [E; E; F; G; G; F ; E; D; C; C; D; E; E; D; D; E; E; F; G; G; F; E; D; C; C; D; E; D; C; C; D; D; E; C; D; E; F; E; C; D; E; F; E; D; C; D; REST; E; E; F; G; G; F; E; D; C; C; D; E; D; C; C]; 
 lengths = [0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.125; 0.125; 0.25; 0.25; 0.25; 0.125; 0.125; 0.25; 0.25; 0.25; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.25; 0.375; 0.125; 0.5] }
  
-let sonata = { emotion = "upbeat";
+(*let sonata = { emotion = "upbeat";
 pitches = [C; E; G; B; C; D; C; REST; A; G; C; G; F; E; F; E; REST];
+lengths = [0.5; 0.25; 0.25; 0.375; 0.0625; 0.0625; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.125; 0.0625; 0.0625; 0.25] } *)
+
+ 
+let sonata = { emotion = "upbeat1";
+pitches = [A; B; C; D; E; F; G; Gb; A; Ab; Eb; Db; E; B; REST; E; B; D; F; Gb; A; C; Db; B; Db; D; E; E; E; B; D; Ab];
 lengths = [0.5; 0.25; 0.25; 0.375; 0.0625; 0.0625; 0.25; 0.25; 0.5; 0.25; 0.25; 0.25; 0.125; 0.0625; 0.0625; 0.25] }
 
-let entertainer = { emotion = "upbeat";
+let entertainer = { emotion = "upbeat1";
 pitches = [D; Eb; E; C; E; C; E; C; REST; C; D; Eb; E; C; D; E; B; D; C; REST; D; Eb; E; C; E; C; E; C; REST; C; D; Eb; E; C; D; E; B; D; C; REST; A; G; Gb; A; C; E; D; C; A; D];
 lengths = [0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.0625; 0.3125; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.25; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.125; 0.0625; 0.3125; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.0625; 0.125; 0.0625; 0.0625; 0.0625; 0.25] }
 
@@ -180,7 +185,7 @@ let rec listprint (lst: string list) : string =
     |[] -> ""
     |hd::tl -> hd ^  " " ^ (listprint tl)
 
-let userinput = ref "upbeat"
+let userinput = ref ""
 
 (** Generates Probability Matrices **)
 (* converts p list to int list *)            
@@ -220,9 +225,10 @@ let rec notes_probability (input : string) (song_list : song list) : float array
     | [] -> []
     | hd :: tl ->
        (if hd.emotion = input
-	then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl)
+	then (convert_plist_to_intlist hd.pitches []) @ (notes_list input tl) 
 	else notes_list input tl))
   in note_counter (notes_list !userinput songs) notes_matrix 
+
 
 (* creates probability matrix for lengths *)
 let rec lengths_probability (input : string) (song_list : song list) : float array array =
@@ -312,28 +318,32 @@ let initial_note () : float array =
   let rand = Random.int 12 in
   next_note_helper rand
 
-let output : unit =
+let output input: unit =
  let stream =
   (let notes = build_notes 50 (initial_note ()) [] in
   let lengths = build_lengths 50 (initial_note ()) [] in
   list_to_stream notes lengths) in  
- let filename = "gen" ^ !userinput ^ ".mid" in 
+ let filename = "gen" ^ input ^ ".mid" in 
  output_midi filename 176 stream
 
 (* prompts for user input *)
 (** instead of returning unit... maybe store the input and return it as a string so it can be used later? **)
-let prompt () : string  = 
-     let words = "Please pick an emotion from this list" ^ " " ^ listprint emotions ^ ":" in 
-     let line =  print_string words in
-     let input = read_line line in
-        if (member (String.lowercase input) emotions) then 
-	  print_string "Your song is being generated...!"; 
-          userinput:= input; !userinput           
-        (*else 
-            let () = print_string "Please try again : Not a valid emotion" in 
-            let () = print_newline () in  
-            print_newline ();;*)
 
+let prompt_helper (str : string) : unit =
+    userinput:= str; 
+    let word = !userinput in 
+    output word
+
+let prompt : unit  = 
+     let words = "Please pick an emotion from this list: " ^ " " ^ listprint emotions ^ ":" in 
+     let line =  print_string words in
+     let input  = read_line line in
+        if (member input emotions) then 
+            prompt_helper input
+        else 
+            let () = print_string "Please try again : Not a valid emotion (emotion must be in lowercase)" in 
+            let () = print_newline () in  
+            print_newline ()  
 (*
 (*>* Problem 3.1 *>*)
 (* Write a function list_to_stream that builds a music stream from a finite

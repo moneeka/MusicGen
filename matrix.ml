@@ -51,8 +51,7 @@ module Mus_matrix : MUS_MATRIX =
             for i = 0 to 12 do
             vet.(i) <- sum_row mat i
             done; vet
-       
-        
+         
     end 
 
 
